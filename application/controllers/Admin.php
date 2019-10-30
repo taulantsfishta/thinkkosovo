@@ -121,7 +121,7 @@ class Admin extends CI_Controller {
              $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
              $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_update'=>'','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
              $getTypename   = lcfirst($getTypename);
-             header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+             header( "refresh:2;url=http://thinkkosovo.cleverapps.io/".$getTypename );
              $this->load->view('adminpanel/header');
              $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
            }else{
@@ -145,7 +145,7 @@ class Admin extends CI_Controller {
                   $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=>'','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
                 }else{
@@ -166,7 +166,7 @@ class Admin extends CI_Controller {
                   $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=>'','return_message'=>$returnData_1['message'],'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
 
@@ -177,7 +177,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=>'','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
                   }else{
@@ -187,7 +187,7 @@ class Admin extends CI_Controller {
                     unlink('uploads/'.$image['file_name']);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','error_message_update'=>'','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
                   }
@@ -207,7 +207,7 @@ class Admin extends CI_Controller {
              $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
              $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_update'=>'','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
              $getTypename   = lcfirst($getTypename);
-             header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+             header( "refresh:3;url=http://thinkkosovo.cleverapps.io/".$getTypename );
              $this->load->view('adminpanel/header');
              $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
            }else{
@@ -231,7 +231,7 @@ class Admin extends CI_Controller {
                   $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=>$this->upload->display_errors(),'return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
                 }else{
@@ -253,7 +253,7 @@ class Admin extends CI_Controller {
                   $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=>$this->upload->display_errors(),'return_message'=>'','return_message_update'=>$returnData_1['message'],'table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
 
@@ -264,7 +264,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=>$this->upload->display_errors(),'return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                    header( "refresh:3;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
                   }else{
@@ -274,7 +274,7 @@ class Admin extends CI_Controller {
                     unlink('uploads/'.$image['file_name']);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','error_message_update'=>'','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+                    header( "refresh:3;url=http://thinkkosovo.cleverapps.io/".$getTypename );
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
                   }
@@ -297,7 +297,7 @@ class Admin extends CI_Controller {
       $returnData = $this->historyandculture->getHistoryandculturedata($getTypename);
       $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','return_message'=>'','table_data'=>$returnData,'message_deleted'=>$message_deleted['message']);
       $getTypename   = lcfirst($getTypename);
-      header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+      header( "refresh:2;url=http://thinkkosovo.cleverapps.io/".$getTypename );
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
     }else{
@@ -537,7 +537,7 @@ class Admin extends CI_Controller {
              $returnData = $this->event->getEventdata($getTypename);
              $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
              $getTypename   = lcfirst($getTypename);
-             header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/event" );
+             header( "refresh:2;url=http://thinkkosovo.cleverapps.io/event" );
              $this->load->view('adminpanel/header');
              $this->load->view('adminpanel/event/'.$getTypename,$data);
            }else{
@@ -566,7 +566,7 @@ class Admin extends CI_Controller {
                   $returnData = $this->event->getEventdata($getTypename);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/event" );
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/event" );
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/event/'.$getTypename,$data);
                 }else{
@@ -591,7 +591,7 @@ class Admin extends CI_Controller {
                   $returnData = $this->event->getEventdata($getTypename);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>$returnData_1['message'],'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/event" );
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/event" );
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/event/'.$getTypename,$data);
 
@@ -602,7 +602,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->event->getEventdata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/event" );
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/event" );
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/event/'.$getTypename,$data);
                   }else{
@@ -612,7 +612,7 @@ class Admin extends CI_Controller {
                     unlink('uploads/'.$image['file_name']);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/event" );
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/event" );
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/event/'.$getTypename,$data);
                   }
@@ -631,7 +631,7 @@ class Admin extends CI_Controller {
        $returnData = $this->event->getEventdata($getTypename);
        $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=>'','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
        $getTypename   = lcfirst($getTypename);
-       header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/event" );
+       header( "refresh:3;url=http://thinkkosovo.cleverapps.io/event" );
        $this->load->view('adminpanel/header');
        $this->load->view('adminpanel/event/'.$getTypename,$data);
      }else{
@@ -659,7 +659,7 @@ class Admin extends CI_Controller {
             $returnData = $this->event->getEventdata($getTypename);
             $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> $this->upload->display_errors(),'return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
             $getTypename   = lcfirst($getTypename);
-            header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/event" );
+            header( "refresh:3;url=http://thinkkosovo.cleverapps.io/event" );
             $this->load->view('adminpanel/header');
             $this->load->view('adminpanel/event/'.$getTypename,$data);
           }else{
@@ -706,7 +706,7 @@ class Admin extends CI_Controller {
             $returnData = $this->event->getEventdata($getTypename);
             $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> $this->upload->display_errors(),'return_message'=>'','return_message_update'=>$returnData_1['message'],'table_data'=>$returnData,'message_deleted'=>'');
             $getTypename   = lcfirst($getTypename);
-            // header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/event" );
+            // header( "refresh:3;url=http://thinkkosovo.cleverapps.io/event" );
             $this->load->view('adminpanel/header');
             $this->load->view('adminpanel/event/'.$getTypename,$data);
           }
@@ -716,7 +716,7 @@ class Admin extends CI_Controller {
               $returnData = $this->event->getEventdata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> $this->upload->display_errors(),'return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/event" );
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/event" );
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/event/'.$getTypename,$data);
             }else{
@@ -726,7 +726,7 @@ class Admin extends CI_Controller {
               unlink('uploads/'.$image['file_name']);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/event" );
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/event" );
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/event/'.$getTypename,$data);
             }
@@ -749,7 +749,7 @@ class Admin extends CI_Controller {
       $returnData = $this->event->getEventdata($getTypename);
       $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>$message_deleted['message']);
       $getTypename   = lcfirst($getTypename);
-      header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/".$getTypename );
+      header( "refresh:2;url=http://thinkkosovo.cleverapps.io/".$getTypename );
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/event/'.$getTypename,$data);
     }else{
@@ -854,7 +854,7 @@ class Admin extends CI_Controller {
        $returnData = $this->ineed->getIneeddata($getTypename);
        $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
        $getTypename   = lcfirst($getTypename);
-       header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+       header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
        $this->load->view('adminpanel/header');
        $this->load->view('adminpanel/ineed/'.$getTypename,$data);
      }else{
@@ -879,7 +879,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -887,7 +887,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -939,7 +939,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=>'','return_message'=>$returnData_1['message'],'error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -947,7 +947,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -959,7 +959,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -967,7 +967,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -979,7 +979,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }else{
@@ -989,7 +989,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/hotel");
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/hotel");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }
@@ -1010,7 +1010,7 @@ class Admin extends CI_Controller {
        $returnData = $this->ineed->getIneeddata($getTypename);
        $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
        $getTypename   = lcfirst($getTypename);
-       header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+       header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
        $this->load->view('adminpanel/header');
        $this->load->view('adminpanel/ineed/'.$getTypename,$data);
      }else{
@@ -1035,7 +1035,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1043,7 +1043,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1096,7 +1096,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=>'','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>$returnData_1['message'],'error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1104,7 +1104,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1116,7 +1116,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -1124,7 +1124,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'<p>No photos found for upload.</p>','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -1136,7 +1136,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }else{
@@ -1146,7 +1146,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/hotel");
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/hotel");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }
@@ -1168,7 +1168,7 @@ class Admin extends CI_Controller {
        $returnData = $this->ineed->getIneeddata($getTypename);
        $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
        $getTypename   = lcfirst($getTypename);
-       header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+       header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
        $this->load->view('adminpanel/header');
        $this->load->view('adminpanel/ineed/'.$getTypename,$data);
      }else{
@@ -1193,7 +1193,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1201,7 +1201,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1252,7 +1252,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=>'','return_message'=>$returnData_1['message'],'error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1260,7 +1260,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1272,7 +1272,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -1280,7 +1280,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -1292,7 +1292,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }else{
@@ -1302,7 +1302,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/travelagency");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }
@@ -1323,7 +1323,7 @@ class Admin extends CI_Controller {
        $returnData = $this->ineed->getIneeddata($getTypename);
        $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
        $getTypename   = lcfirst($getTypename);
-        header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+        header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
        $this->load->view('adminpanel/header');
        $this->load->view('adminpanel/ineed/'.$getTypename,$data);
      }else{
@@ -1348,7 +1348,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1356,7 +1356,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1408,7 +1408,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=>'','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>$returnData_1['message'],'error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1416,7 +1416,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1428,7 +1428,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -1436,7 +1436,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'<p>No photos found for upload.</p>','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -1448,7 +1448,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }else{
@@ -1458,7 +1458,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/travelagency");
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/travelagency");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }
@@ -1479,7 +1479,7 @@ class Admin extends CI_Controller {
        $returnData = $this->ineed->getIneeddata($getTypename);
        $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
        $getTypename   = lcfirst($getTypename);
-        header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+        header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
        $this->load->view('adminpanel/header');
        $this->load->view('adminpanel/ineed/'.$getTypename,$data);
      }else{
@@ -1504,7 +1504,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1512,7 +1512,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1563,7 +1563,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=>'','return_message'=>$returnData_1['message'],'error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1571,7 +1571,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1583,7 +1583,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -1591,7 +1591,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -1603,7 +1603,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }else{
@@ -1613,7 +1613,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/food");
+                  header( "refresh:2;url=http://thinkkosovo.cleverapps.io/food");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }
@@ -1634,7 +1634,7 @@ class Admin extends CI_Controller {
        $returnData = $this->ineed->getIneeddata($getTypename);
        $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
        $getTypename   = lcfirst($getTypename);
-       header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+       header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
        $this->load->view('adminpanel/header');
        $this->load->view('adminpanel/ineed/'.$getTypename,$data);
      }else{
@@ -1659,7 +1659,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1667,7 +1667,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1719,7 +1719,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=>'','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>$returnData_1['message'],'error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -1727,7 +1727,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }
@@ -1739,7 +1739,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -1747,7 +1747,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'<p>No photos found for upload.</p>','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -1759,7 +1759,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }else{
@@ -1769,7 +1769,7 @@ class Admin extends CI_Controller {
                   unlink('uploads/'.$image['file_name']);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                   $getTypename   = lcfirst($getTypename);
-                  header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/food");
+                  header( "refresh:3;url=http://thinkkosovo.cleverapps.io/food");
                   $this->load->view('adminpanel/header');
                   $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                 }
@@ -1792,7 +1792,7 @@ class Admin extends CI_Controller {
              $returnData = $this->ineed->getIneeddata($getTypename);
              $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
              $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
              $this->load->view('adminpanel/header');
              $this->load->view('adminpanel/ineed/'.$getTypename,$data);
            }else{
@@ -1817,7 +1817,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }else{
@@ -1825,7 +1825,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }
@@ -1877,7 +1877,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_1'=>'','return_message'=>$returnData_1['message'],'error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }else{
@@ -1885,7 +1885,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }
@@ -1897,7 +1897,7 @@ class Admin extends CI_Controller {
                       $returnData = $this->ineed->getIneeddata($getTypename);
                       $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                       $getTypename   = lcfirst($getTypename);
-                      header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                      header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                       $this->load->view('adminpanel/header');
                       $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                     }else{
@@ -1905,7 +1905,7 @@ class Admin extends CI_Controller {
                       $returnData = $this->ineed->getIneeddata($getTypename);
                       $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_1'=>'No photos found for upload.','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                       $getTypename   = lcfirst($getTypename);
-                      header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                      header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                       $this->load->view('adminpanel/header');
                       $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                     }
@@ -1917,7 +1917,7 @@ class Admin extends CI_Controller {
                         unlink('uploads/'.$image['file_name']);
                         $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                         $getTypename   = lcfirst($getTypename);
-                        header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                        header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                         $this->load->view('adminpanel/header');
                         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                       }else{
@@ -1927,7 +1927,7 @@ class Admin extends CI_Controller {
                         unlink('uploads/'.$image['file_name']);
                         $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> 'No photos found for upload.','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                         $getTypename   = lcfirst($getTypename);
-                        header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/coffe");
+                        header( "refresh:2;url=http://thinkkosovo.cleverapps.io/coffe");
                         $this->load->view('adminpanel/header');
                         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                       }
@@ -1948,7 +1948,7 @@ class Admin extends CI_Controller {
              $returnData = $this->ineed->getIneeddata($getTypename);
              $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
              $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
              $this->load->view('adminpanel/header');
              $this->load->view('adminpanel/ineed/'.$getTypename,$data);
            }else{
@@ -1973,7 +1973,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }else{
@@ -1981,7 +1981,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }
@@ -2034,7 +2034,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=>'','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>$returnData_1['message'],'error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }else{
@@ -2042,7 +2042,7 @@ class Admin extends CI_Controller {
                     $returnData = $this->ineed->getIneeddata($getTypename);
                     $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                     $getTypename   = lcfirst($getTypename);
-                    header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                    header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                     $this->load->view('adminpanel/header');
                     $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                   }
@@ -2054,7 +2054,7 @@ class Admin extends CI_Controller {
                       $returnData = $this->ineed->getIneeddata($getTypename);
                       $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                       $getTypename   = lcfirst($getTypename);
-                      header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                      header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                       $this->load->view('adminpanel/header');
                       $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                     }else{
@@ -2062,7 +2062,7 @@ class Admin extends CI_Controller {
                       $returnData = $this->ineed->getIneeddata($getTypename);
                       $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_1'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                       $getTypename   = lcfirst($getTypename);
-                      header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                      header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                       $this->load->view('adminpanel/header');
                       $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                     }
@@ -2074,7 +2074,7 @@ class Admin extends CI_Controller {
                         unlink('uploads/'.$image['file_name']);
                         $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
                         $getTypename   = lcfirst($getTypename);
-                        header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                        header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                         $this->load->view('adminpanel/header');
                         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                       }else{
@@ -2084,7 +2084,7 @@ class Admin extends CI_Controller {
                         unlink('uploads/'.$image['file_name']);
                         $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','error_message_update_1'=>'<p>No photos found for upload.</p>','table_data'=>$returnData,'message_deleted'=>'');
                         $getTypename   = lcfirst($getTypename);
-                        header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/coffe");
+                        header( "refresh:3;url=http://thinkkosovo.cleverapps.io/coffe");
                         $this->load->view('adminpanel/header');
                         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
                       }
@@ -2105,7 +2105,7 @@ class Admin extends CI_Controller {
          $returnData = $this->ineed->getIneeddata($getTypename);
          $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
          $getTypename   = lcfirst($getTypename);
-          header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/taxi");
+          header( "refresh:2;url=http://thinkkosovo.cleverapps.io/taxi");
          $this->load->view('adminpanel/header');
          $this->load->view('adminpanel/ineed/'.$getTypename,$data);
        }else{
@@ -2126,7 +2126,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/taxi");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/taxi");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -2145,7 +2145,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>$returnData_1['message'],'error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/taxi");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/taxi");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
 
@@ -2156,7 +2156,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/taxi");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/taxi");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -2166,7 +2166,7 @@ class Admin extends CI_Controller {
                 unlink('uploads/'.$image['file_name']);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/taxi");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/taxi");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -2185,7 +2185,7 @@ class Admin extends CI_Controller {
          $returnData = $this->ineed->getIneeddata($getTypename);
          $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
          $getTypename   = lcfirst($getTypename);
-         header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/taxi");
+         header( "refresh:3;url=http://thinkkosovo.cleverapps.io/taxi");
          $this->load->view('adminpanel/header');
          $this->load->view('adminpanel/ineed/'.$getTypename,$data);
        }else{
@@ -2205,7 +2205,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/taxi");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/taxi");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -2224,7 +2224,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>$returnData_1['message'],'table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/taxi");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/taxi");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
 
@@ -2235,7 +2235,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/taxi");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/taxi");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -2245,7 +2245,7 @@ class Admin extends CI_Controller {
                 unlink('uploads/'.$image['file_name']);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/taxi");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/taxi");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -2264,7 +2264,7 @@ class Admin extends CI_Controller {
          $returnData = $this->ineed->getIneeddata($getTypename);
          $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
          $getTypename   = lcfirst($getTypename);
-          header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/rent");
+          header( "refresh:2;url=http://thinkkosovo.cleverapps.io/rent");
          $this->load->view('adminpanel/header');
          $this->load->view('adminpanel/ineed/'.$getTypename,$data);
        }else{
@@ -2284,7 +2284,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/rent");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/rent");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -2302,7 +2302,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>$returnData_1['message'],'error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/rent");
+              header( "refresh:2;url=http://thinkkosovo.cleverapps.io/rent");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
 
@@ -2313,7 +2313,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/rent");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/rent");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -2323,7 +2323,7 @@ class Admin extends CI_Controller {
                 unlink('uploads/'.$image['file_name']);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:2;url=".$_SERVER['REQUEST_URI']."/rent");
+                header( "refresh:2;url=http://thinkkosovo.cleverapps.io/rent");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -2342,7 +2342,7 @@ class Admin extends CI_Controller {
          $returnData = $this->ineed->getIneeddata($getTypename);
          $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
          $getTypename   = lcfirst($getTypename);
-         header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/rent");
+         header( "refresh:3;url=http://thinkkosovo.cleverapps.io/rent");
          $this->load->view('adminpanel/header');
          $this->load->view('adminpanel/ineed/'.$getTypename,$data);
        }else{
@@ -2362,7 +2362,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/rent");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/rent");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
@@ -2381,7 +2381,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>$returnData_1['message'],'table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/rent");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/rent");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
 
@@ -2392,7 +2392,7 @@ class Admin extends CI_Controller {
                 $returnData = $this->ineed->getIneeddata($getTypename);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/rent");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/rent");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }else{
@@ -2402,7 +2402,7 @@ class Admin extends CI_Controller {
                 unlink('uploads/'.$image['file_name']);
                 $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','return_message'=>'','error_message_update'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
                 $getTypename   = lcfirst($getTypename);
-                header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/rent");
+                header( "refresh:3;url=http://thinkkosovo.cleverapps.io/rent");
                 $this->load->view('adminpanel/header');
                 $this->load->view('adminpanel/ineed/'.$getTypename,$data);
               }
@@ -2424,7 +2424,7 @@ class Admin extends CI_Controller {
       $returnData = $this->ineed->getIneeddata($getTypename);
       $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_1'=>'','return_message'=>'','table_data'=>$returnData,'message_deleted'=>$message_deleted['message']);
       $getTypename   = lcfirst($getTypename);
-      header( "refresh:3;url=".$_SERVER['REQUEST_URI']."/".$getTypename);
+      header( "refresh:3;url=http://thinkkosovo.cleverapps.io/".$getTypename);
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/ineed/'.$getTypename,$data);
     }else{
