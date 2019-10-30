@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'vt6vt6',
-	'database' => 'think_kosovo',
+	'hostname' => 'bkiaxdtaoyeie2ewlohu-mysql.services.clever-cloud.com',
+	'username' => 'uxnbxky2z0lkoer7',
+	'password' => '6sUs4fNVSAhT57hr62jx',
+	'database' => 'bkiaxdtaoyeie2ewlohu',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
