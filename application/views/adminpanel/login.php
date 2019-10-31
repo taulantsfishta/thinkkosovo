@@ -40,7 +40,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <body class="animsition">
     <div class="page-wrapper">
-        <div class="page-content--bge5">
+        <div class="page-content--bge5 " style="background-image: url('<?php echo asset_url()."images/icon/home_photo4.jpg";?>');background-repeat: no-repeat;background-attachment: fixed;
+        background-size: cover;">
             <div class="container">
                 <div class="login-wrap">
                     <div class="login-content">
@@ -61,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <span class='text_danger' style="color:red;"><?php echo form_error('password'); ?></span>
                                 </div>
 
-                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
+                                <button class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">Sign In</button>
 
                             </form>
 
