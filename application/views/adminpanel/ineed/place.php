@@ -89,10 +89,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="col-md-6">
                     <div class="login-form">
                       <p  style="text-align:center;font-size:25px;">
-                        Register new hotel
+                        Register new place
                       </p>
                         <span class='col-md-12' style="color:#63C76A;font-size:20px;"><?php echo $return_message;?></span>
-                        <form action="<?php echo base_url()."register_hotel/Hotel" ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php echo base_url()."register_place/Place" ?>" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                               <select required id="sel1"  class="selectform"  name='city'>
                                 <option value='' selected disabled>Select City</option>
@@ -108,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               <span class='text_danger' style="color:red;"><?php echo form_error('city'); ?></span>
                             </div>
                             <div class="form-group">
-                            <input class="au-input au-input--full" type="text" name="name" placeholder="Hotel Name" pattern='.{3,100}' required title='3 to 100 characters'>
+                            <input class="au-input au-input--full" type="text" name="name" placeholder="Place Name" pattern='.{3,100}' required title='3 to 100 characters'>
                                 <span class='text_danger' style="color:red;"><?php echo form_error('name'); ?></span>
                             </div>
                             <div class="form-group">
@@ -155,7 +155,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               <span class='text_danger' style="color:red;"><?php echo form_error('stars'); ?></span>
                             </div>
                             <div class="form-group">
-                                <input class="au-input au-input--full" type="text" name="type_ineed" value="Hotel" hidden>
+                                <input class="au-input au-input--full" type="text" name="type_ineed" value="Place" hidden>
                                 <span class='text_danger' style="color:red;"><?php echo form_error('type_ineed'); ?></span>
                             </div>
                             <div class="form-group">
@@ -169,7 +169,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="main-section">
                               <h3  style="color:black;">Upload Main Photo</h3><br>
                               <div class="form-group">
-                                  <input class="upload_image" type="file" name="image" placeholder="Hotel Image" required>
+                                  <input class="upload_image" type="file" name="image" placeholder="Place Image" required>
                               </div>
                           </div>
                             <span class='text_danger' style="color:red;"><?php echo $error_message; ?></span>
@@ -223,7 +223,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <thead>
                       <tr>
-                        <th class="th-sm">Hotel Service Name</th>
+                        <th class="th-sm">Place Name</th>
                         <th class="th-sm">Location</th>
                         <th class="th-sm">City</th>
                         <th class="th-sm">Edit</th>
@@ -248,9 +248,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                       <div class='modal-content'>
                                         <div class='modal-body'>
                                         <p  style='text-align:center;font-size:25px;'>
-                                          Update the hotel
+                                          Update the place
                                         </p>
-                                          <form action=".base_url().'updatehoteldata/Hotel'." method='post' enctype='multipart/form-data''>
+                                          <form action=".base_url().'updateplacedata/Place'." method='post' enctype='multipart/form-data''>
                                           <div class='form-group'>
                                           <input class='au-input au-input--full' type='text' name='idupdate' value=".$value['id']." hidden>
                                           </div>
@@ -268,7 +268,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </select>
                                           </div>
                                             <div class='form-group'>
-                                            <input class='au-input au-input--full' type='text' name='nameupdate' value='".$value['name']."' placeholder='Hotel Service Name' pattern='.{3,100}' required title='3 to 100 characters'>
+                                            <input class='au-input au-input--full' type='text' name='nameupdate' value='".$value['name']."' placeholder='Place Service Name' pattern='.{3,100}' required title='3 to 100 characters'>
                                             </div>
                                             <div class='form-group'>
                                                 <input class='au-input au-input--full' type='text' name='locationupdate' value='".$value['location']."' placeholder='Address' pattern='.{3,500}' required title='3 to 500 characters'>
@@ -309,7 +309,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                               </select>
                                             </div>
                                             <div class='form-group'>
-                                                <input class='au-input au-input--full' type='text' name='type_ineedupdate' value='Hotel' hidden>
+                                                <input class='au-input au-input--full' type='text' name='type_ineedupdate' value='Place' hidden>
                                             </div>
                                             <div class='form-group'>
                                                 <input class='au-input au-input--full' type='text' name='latitudeupdate' value='".$value['latitude']."' step='any' placeholder='Latitude(42.662651)' pattern='.{3,50}' required title='3 to 50 characters'>
@@ -320,7 +320,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class='main-section'>
                                               <p  style='color:red;'>If you edit any data you should update the photo again</p>
                                               <div class='form-group'>
-                                                  <input class='upload_image' type='file' name='imageupdate' placeholder='Hotel Image' required>
+                                                  <input class='upload_image' type='file' name='imageupdate' placeholder='Place Image' required>
                                               </div>
                                             </div>
                                             <div class='main-section'>
@@ -341,7 +341,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                             </td>
                             </td>
-                            <form action=".base_url().'deleteineeddata/Hotel'." method='post' onsubmit='return ConfirmDelete()'>
+                            <form action=".base_url().'deleteineeddata/Place'." method='post' onsubmit='return ConfirmDelete()'>
                             <td style='  background-color:#d11a2a;'><button type='submit' name='id' value=".$value['id']."><span style=font-weight:bold;;color:white;'>Delete</span></button></td>
                             </form>
                           </tr>";

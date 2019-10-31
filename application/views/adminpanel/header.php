@@ -129,7 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <i class="fas fa-compass"></i>Explore</a>
                         <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                           <li>
-                              <a href="<?php echo base_url().'hotel'; ?>"><i class="fas fa-hotel"></i>Hotel</a>
+                              <a href="<?php echo base_url().'place'; ?>"><i class="fas fa-hotel"></i>Place</a>
                           </li>
                           <li>
                               <a href="<?php echo base_url().'food'; ?>"><i class="fas fa-utensils-alt"></i>Food</a>
@@ -222,7 +222,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                          <i class="fas fa-compass"></i>Explore</a>
                          <ul class="list-unstyled navbar__sub-list js-sub-list">
                            <li>
-                               <a href="<?php echo base_url().'hotel'; ?>"><i class="fas fa-hotel"></i>Hotel</a>
+                               <a href="<?php echo base_url().'place'; ?>"><i class="fas fa-hotel"></i>Place</a>
                            </li>
                            <li>
                                <a href="<?php echo base_url().'food'; ?>"><i class="fas fa-utensils-alt"></i>Food</a>

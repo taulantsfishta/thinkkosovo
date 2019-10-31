@@ -162,20 +162,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   $route['deleteeventdata/(:any)/(:any)']                          = "admin/deleteeventdata/$1/$2";
   $route['deleteeventdata/(:any)/(:any)/(:any)']                   = "admin/deleteeventdata/$1/$2/$3";
 
-  $route['hotel']                                                  = 'admin/hotel';
-  $route['hotel/(:any)']                                           = 'admin/hotel/$1';
-  $route['hotel/(:any)/(:any)']                                    = "admin/hotel/$1/$2";
-  $route['hotel/(:any)/(:any)/(:any)']                             = "admin/hotel/$1/$2/$3";
+  $route['place']                                                  = 'admin/place';
+  $route['place/(:any)']                                           = 'admin/place/$1';
+  $route['place/(:any)/(:any)']                                    = "admin/place/$1/$2";
+  $route['place/(:any)/(:any)/(:any)']                             = "admin/place/$1/$2/$3";
 
-  $route['register_hotel']                                         = 'admin/register_hotel';
-  $route['register_hotel/(:any)']                                  = 'admin/register_hotel/$1';
-  $route['register_hotel/(:any)/(:any)']                           = "admin/register_hotel/$1/$2";
-  $route['register_hotel/(:any)/(:any)/(:any)']                    = "admin/register_hotel/$1/$2/$3";
+  $route['register_place']                                         = 'admin/register_place';
+  $route['register_place/(:any)']                                  = 'admin/register_place/$1';
+  $route['register_place/(:any)/(:any)']                           = "admin/register_place/$1/$2";
+  $route['register_place/(:any)/(:any)/(:any)']                    = "admin/register_place/$1/$2/$3";
 
-  $route['updatehoteldata']                                        = 'admin/updatehoteldata';
-  $route['updatehoteldata/(:any)']                                 = 'admin/updatehoteldata/$1';
-  $route['updatehoteldata/(:any)/(:any)']                          = "admin/updatehoteldata/$1/$2";
-  $route['updatehoteldata/(:any)/(:any)/(:any)']                   = "admin/updatehoteldata/$1/$2/$3";
+  $route['updateplacedata']                                        = 'admin/updateplacedata';
+  $route['updateplacedata/(:any)']                                 = 'admin/updateplacedata/$1';
+  $route['updateplacedata/(:any)/(:any)']                          = "admin/updateplacedata/$1/$2";
+  $route['updateplacedata/(:any)/(:any)/(:any)']                   = "admin/updateplacedata/$1/$2/$3";
 
   $route['deleteineeddata']                                        = 'admin/deleteineeddata';
   $route['deleteineeddata/(:any)']                                 = 'admin/deleteineeddata/$1';
