@@ -104,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- MAIN CONTENT-->
             <div class="main-content">
               <div class='imgbox'>
-                <img class="center-fit" src="<?php echo asset_url()."images/icon/kosovo_mountain2.jpg";?>" alt="" />
+                <img class="center-fit" src="<?php echo asset_url()."images/icon/home_photo.jpg";?>" alt="" />
               </div>
 
             </div>
