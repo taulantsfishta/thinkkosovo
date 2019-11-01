@@ -154,7 +154,7 @@ class Api {
       }else{
       $returnData[]= false;
     }
-    $returnData =[[1=>$selectedData,2=>$selectedData_1]];
+    $returnData =[['one'=>$selectedData,'two'=>$selectedData_1]];
     return $returnData;
   }
 
