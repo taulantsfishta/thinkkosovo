@@ -164,7 +164,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="logo">
                 <a href="<?php echo base_url().'home'; ?>">
 
-                    <img src="<?php echo asset_url()."images/icon/logo-ks3.png";?>" alt="Cool Admin" />
+                    <img src="<?php echo asset_url()."images/icon/login2.png";?>" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
