@@ -58,7 +58,7 @@ class Api {
                                                ];
 
        }else if(((strtotime($value['startdate'])) < (strtotime($today))) && ((strtotime($value['enddate'])) > (strtotime($today)))){
-          $selectedData[$key] =   [
+          $selectedData[] =   [
                                                  'id'              => $value['id'],
                                                  'name'            => $value['name'],
                                                  'place'           => $value['place'],
@@ -76,7 +76,7 @@ class Api {
                                                  'url'             => $value['url'],
                                                ];
         }else if(((strtotime($value['startdate'])) > (strtotime($today))) && ((strtotime($value['enddate'])) > (strtotime($today)))){
-          $selectedData[$key] =   [
+          $selectedData[] =   [
                                                  'id'              => $value['id'],
                                                  'name'            => $value['name'],
                                                  'place'           => $value['place'],
@@ -96,7 +96,7 @@ class Api {
         }
       }
 
-      $returnData[] = $selectedData;
+      // $returnData[] = [$selectedData];
       }else{
       $returnData []= false;
     } 
@@ -107,7 +107,7 @@ class Api {
     if(null != $select_ineed){
       foreach ($select_ineed as $key => $value) {
         if($value['type']=='Taxi'){
-          $selectedData_1[$key] =
+          $selectedData_1[] =
                                                 [
                                                   'id'                 => $value['id'],
                                                   'name'               => $value['name'],
@@ -118,7 +118,7 @@ class Api {
                                                   'type'               => $value['type'],
                                                ];
         }elseif($value['type']=='Rent'){
-          $selectedData_1[$key] =
+          $selectedData_1[] =
                                                 [
                                                   'id'                 => $value['id'],
                                                   'name'               => $value['name'],
@@ -133,7 +133,7 @@ class Api {
         $strArray   = explode('_',$latitude_longitude);
         $latitude   = $strArray[0];
         $longitude  = $strArray[1];
-        $selectedData_1[$key] =
+        $selectedData_1[] =
                                                 [
                                                   'id'                 => $value['id'],
                                                   'name'               => $value['name'],
@@ -150,12 +150,12 @@ class Api {
       }
     }
 
-      $returnData[] = $selectedData_1;
+      // $returnData[] = [$selectedData_1];
       }else{
       $returnData[]= false;
     }
-
-      return $returnData;
+    $returnData =[[1=>$selectedData,2=>$selectedData_1]];
+    return $returnData;
   }
 
 
