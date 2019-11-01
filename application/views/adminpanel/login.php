@@ -40,26 +40,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <body class="animsition">
     <div class="page-wrapper">
-        <div class="page-content--bge5 " style="background-image: url('<?php echo asset_url()."images/icon/home_photo4.jpg";?>');background-repeat: no-repeat;background-attachment: fixed;
+        <div class="page-content--bge5 " style="background-image: url('<?php echo asset_url()."images/icon/home_photo5.jpg";?>');background-repeat: no-repeat;background-attachment: fixed;
         background-size: cover;">
             <div class="container">
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
-                            <a href="#">
-                                <img src="<?php echo asset_url()."images/icon/user_login_1.jpg";?>" alt="CoolAdmin">
-                            </a>
+                            <!-- <a href="#">
+                                <img src="<?php echo asset_url()."images/icon/login1.png";?>" alt="CoolAdmin">
+                            </a> -->
                         </div>
                         <div class="login-form">
                             <form action="<?php echo base_url()."login_validation" ?>" method="post">
                                 <div class="form-group">
-                                    <span class='text_danger' style="color:red;"><?php echo $this->session->flashdata('error'); ?></span>
-                                    <input class="au-input au-input--full" type="text" name="username" placeholder="Enter Username">
-                                    <span class='text_danger' style="color:red;"><?php echo form_error('username'); ?></span>
+                                    <span class='text_danger' style="color:white;"><?php echo $this->session->flashdata('error'); ?></span>
+                                    <input class="au-input au-input--full" type="text" name="username" placeholder="Username">
+                                    <span class='text_danger' style="color:white;"><?php echo form_error('username'); ?></span>
                                 </div>
                                 <div class="form-group">
-                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Enter Password">
-                                    <span class='text_danger' style="color:red;"><?php echo form_error('password'); ?></span>
+                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                    <span class='text_danger' style="color:white;"><?php echo form_error('password'); ?></span>
                                 </div>
 
                                 <button class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">Sign In</button>
