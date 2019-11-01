@@ -26,8 +26,8 @@ class Api {
   function getAppdata($getData   = ''){
 
     $select_events = $this->ci->db->select('*')->from('event')->order_by('enddate','desc')->get()->result_array();
-    $selectedData = [];
-    $returnData =[];
+    
+    // $returnData =[];
     if(null != $select_events){
       foreach ($select_events as $key => $value) {
         $latitude_longitude = $value['latitude_longitude'];
@@ -58,7 +58,7 @@ class Api {
                                                ];
 
        }else if(((strtotime($value['startdate'])) < (strtotime($today))) && ((strtotime($value['enddate'])) > (strtotime($today)))){
-          $selectedData[] =   [
+          $selectedData[$key] =   [
                                                  'id'              => $value['id'],
                                                  'name'            => $value['name'],
                                                  'place'           => $value['place'],
@@ -76,7 +76,7 @@ class Api {
                                                  'url'             => $value['url'],
                                                ];
         }else if(((strtotime($value['startdate'])) > (strtotime($today))) && ((strtotime($value['enddate'])) > (strtotime($today)))){
-          $selectedData[] =   [
+          $selectedData[$key] =   [
                                                  'id'              => $value['id'],
                                                  'name'            => $value['name'],
                                                  'place'           => $value['place'],
@@ -96,18 +96,18 @@ class Api {
         }
       }
 
-      $returnData[] = [$selectedData];
+      $returnData[] = $selectedData;
       }else{
-      $returnData []= [false];
+      $returnData []= false;
     } 
 
     $select_ineed = $this->ci->db->select('*')->from('ineed')->order_by('id','desc')->get()->result_array();
-    $selectedData_1 = [];
+    // $selectedData_1 = [];
 
     if(null != $select_ineed){
       foreach ($select_ineed as $key => $value) {
         if($value['type']=='Taxi'){
-          $selectedData_1[] =
+          $selectedData_1[$key] =
                                                 [
                                                   'id'                 => $value['id'],
                                                   'name'               => $value['name'],
@@ -118,7 +118,7 @@ class Api {
                                                   'type'               => $value['type'],
                                                ];
         }elseif($value['type']=='Rent'){
-          $selectedData_1[] =
+          $selectedData_1[$key] =
                                                 [
                                                   'id'                 => $value['id'],
                                                   'name'               => $value['name'],
@@ -133,7 +133,7 @@ class Api {
         $strArray   = explode('_',$latitude_longitude);
         $latitude   = $strArray[0];
         $longitude  = $strArray[1];
-        $selectedData_1[] =
+        $selectedData_1[$key] =
                                                 [
                                                   'id'                 => $value['id'],
                                                   'name'               => $value['name'],
@@ -150,9 +150,9 @@ class Api {
       }
     }
 
-      $returnData[] = [$selectedData_1];
+      $returnData[] = $selectedData_1;
       }else{
-      $returnData []= [false];
+      $returnData[]= false;
     }
 
       return $returnData;

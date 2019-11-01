@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="<?php echo asset_url()."images/icon/user_login1.png";?>" alt="John Doe" />
+                                            <img src="<?php echo asset_url()."images/icon/user_login.jpg";?>" alt="John Doe" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="#"><?php echo $username; ?></a>
@@ -75,7 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="<?php echo base_url().'home'; ?>">
-                                                        <img src="<?php echo asset_url()."images/icon/user_login1.png";?>" alt="<?php echo $username; ?>" />
+                                                        <img src="<?php echo asset_url()."images/icon/user_login.jpg";?>" alt="<?php echo $username; ?>" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
