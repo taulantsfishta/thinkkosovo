@@ -14748,3 +14748,26 @@ visibility: hidden;
 textarea::placeholder{
   line-height: 32px;
 }
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  3px;}
+.left-addon .glyphicon  { top:  4px;}
+.left-addon .glyphicon  { border-left: 1px soldix black;}
+.right-addon .glyphicon { right: 3px;}
+.right-addon .glyphicon { top: 4px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  35px; }
+.right-addon input { padding-right: 35px; }

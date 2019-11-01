@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <a class="logo" href="<?php echo base_url().'home'; ?>">
 
-                            <img src="<?php echo asset_url()."images/icon/logo-ks3.png";?>" alt="CoolAdmin" />
+                            <img src="<?php echo asset_url()."images/icon/login2.png";?>" alt="thinkkosovo" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">

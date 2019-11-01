@@ -35,7 +35,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link href="<?php echo asset_url()."vendor/slick/slick.css";?>" rel="stylesheet" media="all">
     <link href="<?php echo asset_url()."vendor/select2/select2.min.css";?>" rel="stylesheet" media="all">
     <link href="<?php echo asset_url()."vendor/perfect-scrollbar/perfect-scrollbar.css";?>" rel="stylesheet" media="all">
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+ 
 </head>
 
 <body class="animsition">
@@ -46,19 +47,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
-                            <!-- <a href="#">
-                                <img src="<?php echo asset_url()."images/icon/login1.png";?>" alt="CoolAdmin">
-                            </a> -->
                         </div>
                         <div class="login-form">
                             <form action="<?php echo base_url()."login_validation" ?>" method="post">
                                 <div class="form-group">
                                     <span class='text_danger' style="color:white;"><?php echo $this->session->flashdata('error'); ?></span>
-                                    <input class="au-input au-input--full" type="text" name="username" placeholder="Username">
+                                    <div class="inner-addon left-addon">
+                                      <i class="glyphicon glyphicon-user"></i>
+                                      <input class="au-input au-input--full" type="text" name="username" placeholder="Username">
+                                    </div>
                                     <span class='text_danger' style="color:white;"><?php echo form_error('username'); ?></span>
                                 </div>
                                 <div class="form-group">
-                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                      <div class="inner-addon left-addon">
+                                      <i class="glyphicon glyphicon-lock"></i>
+                                      <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                    </div>     
                                     <span class='text_danger' style="color:white;"><?php echo form_error('password'); ?></span>
                                 </div>
 
