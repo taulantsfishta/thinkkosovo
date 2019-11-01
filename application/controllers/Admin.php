@@ -35,7 +35,7 @@ class Admin extends CI_Controller {
       if($this->loginadmin->checkUser($username,$password)){
          $session_data = array('username' =>$username);
          $this->session->set_userdata($session_data);
-         redirect(base_url().'home');
+         redirect('https://thinkkosovo.cleverapps.io/home');
 
       }else{
         $this->session->set_flashdata('error','Invalid Username or Password');
