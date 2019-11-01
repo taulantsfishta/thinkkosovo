@@ -27,7 +27,7 @@ class Api {
 
     $select_events = $this->ci->db->select('*')->from('event')->order_by('enddate','desc')->get()->result_array();
     $selectedData = [];
-
+    $returnData =[];
     if(null != $select_events){
       foreach ($select_events as $key => $value) {
         $latitude_longitude = $value['latitude_longitude'];
@@ -96,9 +96,9 @@ class Api {
         }
       }
 
-      $returnData[] = [1=>$selectedData];
+      $returnData['zero'] = $selectedData;
       }else{
-      $returnData []= false;
+      $returnData ['zero']= false;
     } 
 
     $select_ineed = $this->ci->db->select('*')->from('ineed')->order_by('id','desc')->get()->result_array();
@@ -150,9 +150,9 @@ class Api {
       }
     }
 
-      $returnData[] = [2=>$selectedData_1];
+      $returnData['nje'] = $selectedData_1;
       }else{
-      $returnData []= false;
+      $returnData ['nje']= false;
     }
 
       return $returnData;
