@@ -96,9 +96,9 @@ class Api {
         }
       }
 
-      $returnData['zero'] = $selectedData;
+      $returnData[] = $selectedData;
       }else{
-      $returnData ['zero']= false;
+      $returnData []= false;
     } 
 
     $select_ineed = $this->ci->db->select('*')->from('ineed')->order_by('id','desc')->get()->result_array();
@@ -150,9 +150,9 @@ class Api {
       }
     }
 
-      $returnData['nje'] = $selectedData_1;
+      $returnData[] = $selectedData_1;
       }else{
-      $returnData ['nje']= false;
+      $returnData []= false;
     }
 
       return $returnData;
