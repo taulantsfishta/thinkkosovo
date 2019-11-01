@@ -54,14 +54,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <span class='text_danger' style="color:white;"><?php echo $this->session->flashdata('error'); ?></span>
                                     <div class="inner-addon left-addon">
                                       <i class="glyphicon glyphicon-user"></i>
-                                      <input class="au-input au-input--full" type="text" name="username" placeholder="Username">
+                                      <input class="au-input au-input--full" type="text" name="username" placeholder="Username" pattern='.{3,20}' required title='3 to 20 characters'>
                                     </div>
                                     <span class='text_danger' style="color:white;"><?php echo form_error('username'); ?></span>
                                 </div>
                                 <div class="form-group">
                                       <div class="inner-addon left-addon">
                                       <i class="glyphicon glyphicon-lock"></i>
-                                      <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                      <input class="au-input au-input--full" type="password" name="password" placeholder="Password" pattern='.{3,20}' required title='3 to 20 characters'>
                                     </div>     
                                     <span class='text_danger' style="color:white;"><?php echo form_error('password'); ?></span>
                                 </div>
