@@ -53,13 +53,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
                                                 <div class="image">
-                                                    <a href="<?php echo base_url().'home'; ?>">
+                                                    <a href="<?php echo 'https://thinkkosovo.cleverapps.io/home'; ?>">
                                                         <img src="<?php echo asset_url()."images/icon/user_login.jpg";?>" alt="<?php echo $username; ?>" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                      <a href="<?php echo base_url().'home'; ?>"><?php echo $username; ?></a>
+                                                      <a href="<?php echo 'https://thinkkosovo.cleverapps.io/home'; ?>"><?php echo $username; ?></a>
                                                     </h5>
                                                     <!-- <span class="email">johndoe@example.com</span> -->
                                                 </div>
@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                                             <div class="account-dropdown__footer">
-                                                <a href="<?php echo base_url().'logout'; ?>">
+                                                <a href="<?php echo 'https://thinkkosovo.cleverapps.io/logout'; ?>">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
@@ -92,7 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         Register new event
                       </p>
                         <span class='col-md-12' style="color:#63C76A;font-size:20px;"><?php echo $return_message;?></span>
-                        <form action="<?php echo base_url()."register_event/Event" ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php echo "https://thinkkosovo.cleverapps.io/register_event/Event" ?>" method="post" enctype="multipart/form-data">
 
                             <div class="form-group">
                             <input class="au-input au-input--full" type="text" name="name" placeholder="Event Name" pattern='.{3,100}' required title='3 to 100 characters'>
@@ -271,7 +271,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <p  style='text-align:center;font-size:25px;'>
                                           Update the event
                                         </p>
-                                          <form action=".base_url().'updateeventdata/Event'." method='post' enctype='multipart/form-data''>
+                                          <form action=".'https://thinkkosovo.cleverapps.io/updateeventdata/Event'." method='post' enctype='multipart/form-data''>
                                           <div class='form-group'>
                                           <input class='au-input au-input--full' type='text' name='idupdate' value='".$value['id']."' hidden>
                                           </div>
@@ -384,7 +384,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
 
                             </td>
-                            <form action=".base_url().'deleteeventdata/Event'." method='post' onsubmit='return ConfirmDelete()'>
+                            <form action=".'https://thinkkosovo.cleverapps.io/deleteeventdata/Event'." method='post' onsubmit='return ConfirmDelete()'>
                             <td style='  background-color:#d11a2a;'><button type='submit' name='id' value=".$value['id']." style='outline:none;'><span style='font-weight:bold;color:white;'>Delete</span></button></td>
                             </form>
                           </tr>";
