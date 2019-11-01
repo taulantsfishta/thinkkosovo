@@ -1,11 +1,11 @@
 <?php
 
 function asset_url(){
-   return 'https://thinkkosovo.cleverapps.io/assets/';
+   return base_url().'assets/';
 }
 
 function upload_url(){
-   return 'https://thinkkosovo.cleverapps.io/uploads/';
+   return base_url().'uploads/';
 }
 
 ?>
