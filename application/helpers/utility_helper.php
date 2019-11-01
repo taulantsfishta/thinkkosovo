@@ -1,7 +1,7 @@
 <?php
 
 function asset_url(){
-   return 'https://thinkkosovo.cleverapps.io/assets/';
+   return 'thinkkosovo.cleverapps.io/assets/';
 }
 
 function upload_url(){
