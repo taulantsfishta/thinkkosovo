@@ -18,29 +18,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <!-- Main CSS-->
 
-    <link href="<?php echo asset_url()."css/theme.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/css/theme.css";?>" rel="stylesheet" media="all">
 
     <!-- Fontfaces CSS-->
-    <link href="<?php echo asset_url()."css/font-face.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/font-awesome-4.7/css/font-awesome.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/font-awesome-5/css/fontawesome-all.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/fontawesome-pro-5.8.2-web/css/fontawesome.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/fontawesome-pro-5.8.2-web/css/fontawesome.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/fontawesome-pro-5.8.2-web/css/all.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/mdi-font/css/material-design-iconic-font.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/css/font-face.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/font-awesome-4.7/css/font-awesome.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/font-awesome-5/css/fontawesome-all.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/fontawesome-pro-5.8.2-web/css/fontawesome.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/fontawesome-pro-5.8.2-web/css/fontawesome.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/fontawesome-pro-5.8.2-web/css/all.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/mdi-font/css/material-design-iconic-font.min.css";?>" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="<?php echo asset_url()."vendor/bootstrap-4.1/bootstrap.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/bootstrap-4.1/bootstrap.min.css";?>" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/5.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
     <!-- Vendor CSS-->
-    <link href="<?php echo asset_url()."vendor/animsition/animsition.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/wow/animate.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/css-hamburgers/hamburgers.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/slick/slick.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/select2/select2.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo asset_url()."vendor/perfect-scrollbar/perfect-scrollbar.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/animsition/animsition.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/wow/animate.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/css-hamburgers/hamburgers.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/slick/slick.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/select2/select2.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/perfect-scrollbar/perfect-scrollbar.css";?>" rel="stylesheet" media="all">
 
     <style>
     input[type=datetime-local]::-webkit-inner-spin-button {
@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <a class="logo" href="<?php echo base_url().'home'; ?>">
 
-                            <img src="<?php echo asset_url()."images/icon/login2.png";?>" alt="thinkkosovo" />
+                            <img src="<?php echo "https://thinkkosovo.cleverapps.io/assets/images/icon/login2.png";?>" alt="thinkkosovo" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -164,7 +164,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="logo">
                 <a href="<?php echo base_url().'home'; ?>">
 
-                    <img src="<?php echo asset_url()."images/icon/login2.png";?>" alt="Cool Admin" />
+                    <img src="<?php echo "https://thinkkosovo.cleverapps.io/assets/images/icon/login2.png";?>" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
