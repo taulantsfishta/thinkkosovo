@@ -39,7 +39,7 @@ class Admin extends CI_Controller {
 
       }else{
         $this->session->set_flashdata('error','Invalid Username or Password');
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
       }
 
     }else{
@@ -54,14 +54,14 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/home',$username);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
 
   }
 
   function logout(){
     $this->session->unset_userdata('username');
-    redirect(base_url().'admin');
+    redirect('https://thinkkosovo.cleverapps.io/admin');
 
   }
 
@@ -78,7 +78,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
 
   }
@@ -93,7 +93,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
 
   }
@@ -108,7 +108,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
 
   }
@@ -195,7 +195,7 @@ class Admin extends CI_Controller {
            }
 
         }else{
-            redirect(base_url().'admin');
+            redirect('https://thinkkosovo.cleverapps.io/admin');
         }
   }
 
@@ -282,7 +282,7 @@ class Admin extends CI_Controller {
            }
 
         }else{
-            redirect(base_url().'admin');
+            redirect('https://thinkkosovo.cleverapps.io/admin');
         }
   }
 
@@ -301,7 +301,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/history&culture/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
 
   }
@@ -318,7 +318,7 @@ class Admin extends CI_Controller {
   //     $getTypename   = lcfirst($getTypename);
   //     $this->load->view('adminpanel/fan/'.$getTypename,$data);
   //   }else{
-  //     redirect(base_url().'admin');
+  //     redirect('https://thinkkosovo.cleverapps.io/admin');
   //   }
   //
   // }
@@ -393,7 +393,7 @@ class Admin extends CI_Controller {
   //          }
   //
   //       }else{
-  //           redirect(base_url().'admin');
+  //           redirect('https://thinkkosovo.cleverapps.io/admin');
   //       }
   // }
 
@@ -409,7 +409,7 @@ class Admin extends CI_Controller {
   //     $getTypename   = lcfirst($getTypename);
   //     $this->load->view('adminpanel/fan/'.$getTypename,$data);
   //   }else{
-  //     redirect(base_url().'admin');
+  //     redirect('https://thinkkosovo.cleverapps.io/admin');
   //   }
   //
   // }
@@ -425,7 +425,7 @@ class Admin extends CI_Controller {
   //     $getTypename   = lcfirst($getTypename);
   //     $this->load->view('adminpanel/gallery/'.$getTypename,$data);
   //   }else{
-  //     redirect(base_url().'admin');
+  //     redirect('https://thinkkosovo.cleverapps.io/admin');
   //   }
   // }
   // function register_photodata($getTypename=''){
@@ -492,7 +492,7 @@ class Admin extends CI_Controller {
   //          }
   //
   //       }else{
-  //           redirect(base_url().'admin');
+  //           redirect('https://thinkkosovo.cleverapps.io/admin');
   //       }
   // }
   //
@@ -508,7 +508,7 @@ class Admin extends CI_Controller {
   //     $getTypename   = lcfirst($getTypename);
   //     $this->load->view('adminpanel/gallery/'.$getTypename,$data);
   //   }else{
-  //     redirect(base_url().'admin');
+  //     redirect('https://thinkkosovo.cleverapps.io/admin');
   //   }
   //
   // }
@@ -526,7 +526,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/event/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -620,7 +620,7 @@ class Admin extends CI_Controller {
            }
 
         }else{
-            redirect(base_url().'admin');
+            redirect('https://thinkkosovo.cleverapps.io/admin');
         }
   }
 
@@ -734,7 +734,7 @@ class Admin extends CI_Controller {
      }
 
   }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
   }
 
   }
@@ -753,7 +753,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/event/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -771,7 +771,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/ineed/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -785,7 +785,7 @@ class Admin extends CI_Controller {
         $this->load->view('adminpanel/header');
         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
       }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
       }
     }
 
@@ -799,7 +799,7 @@ class Admin extends CI_Controller {
         $this->load->view('adminpanel/header');
         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
       }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
       }
     }
 
@@ -813,7 +813,7 @@ class Admin extends CI_Controller {
         $this->load->view('adminpanel/header');
         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
       }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
       }
     }
 
@@ -827,7 +827,7 @@ class Admin extends CI_Controller {
         $this->load->view('adminpanel/header');
         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
       }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
       }
     }
 
@@ -841,7 +841,7 @@ class Admin extends CI_Controller {
         $this->load->view('adminpanel/header');
         $this->load->view('adminpanel/ineed/'.$getTypename,$data);
       }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
       }
     }
 
@@ -999,7 +999,7 @@ class Admin extends CI_Controller {
      }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -1156,7 +1156,7 @@ class Admin extends CI_Controller {
      }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -1312,7 +1312,7 @@ class Admin extends CI_Controller {
      }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -1468,7 +1468,7 @@ class Admin extends CI_Controller {
      }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -1623,7 +1623,7 @@ class Admin extends CI_Controller {
      }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -1779,7 +1779,7 @@ class Admin extends CI_Controller {
      }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -1937,7 +1937,7 @@ class Admin extends CI_Controller {
            }
 
         }else{
-            redirect(base_url().'admin');
+            redirect('https://thinkkosovo.cleverapps.io/admin');
         }
   }
 
@@ -2094,7 +2094,7 @@ class Admin extends CI_Controller {
            }
 
         }else{
-            redirect(base_url().'admin');
+            redirect('https://thinkkosovo.cleverapps.io/admin');
         }
   }
 
@@ -2174,7 +2174,7 @@ class Admin extends CI_Controller {
        }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -2253,7 +2253,7 @@ class Admin extends CI_Controller {
        }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -2331,7 +2331,7 @@ class Admin extends CI_Controller {
        }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -2410,7 +2410,7 @@ class Admin extends CI_Controller {
        }
 
     }else{
-        redirect(base_url().'admin');
+        redirect('https://thinkkosovo.cleverapps.io/admin');
     }
   }
 
@@ -2428,7 +2428,7 @@ class Admin extends CI_Controller {
       $this->load->view('adminpanel/header');
       $this->load->view('adminpanel/ineed/'.$getTypename,$data);
     }else{
-      redirect(base_url().'admin');
+      redirect('https://thinkkosovo.cleverapps.io/admin');
     }
 
   }
