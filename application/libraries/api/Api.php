@@ -96,13 +96,13 @@ class Api {
         }
       }
 
-      // $returnData[] = [$selectedData];
+
       }else{
       $returnData []= false;
     } 
 
     $select_ineed = $this->ci->db->select('*')->from('ineed')->order_by('id','desc')->get()->result_array();
-    // $selectedData_1 = [];
+
 
     if(null != $select_ineed){
       foreach ($select_ineed as $key => $value) {
@@ -150,7 +150,7 @@ class Api {
       }
     }
 
-      // $returnData[] = [$selectedData_1];
+      
       }else{
       $returnData[]= false;
     }
