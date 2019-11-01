@@ -18,29 +18,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <!-- Main CSS-->
 
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/css/theme.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."css/theme.css";?>" rel="stylesheet" media="all">
 
     <!-- Fontfaces CSS-->
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/css/font-face.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/font-awesome-4.7/css/font-awesome.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/font-awesome-5/css/fontawesome-all.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/fontawesome-pro-5.8.2-web/css/fontawesome.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/fontawesome-pro-5.8.2-web/css/fontawesome.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/fontawesome-pro-5.8.2-web/css/all.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/mdi-font/css/material-design-iconic-font.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."css/font-face.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/font-awesome-4.7/css/font-awesome.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/font-awesome-5/css/fontawesome-all.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/fontawesome-pro-5.8.2-web/css/fontawesome.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/fontawesome-pro-5.8.2-web/css/fontawesome.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/fontawesome-pro-5.8.2-web/css/all.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/mdi-font/css/material-design-iconic-font.min.css";?>" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/bootstrap-4.1/bootstrap.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/bootstrap-4.1/bootstrap.min.css";?>" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/5.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
     <!-- Vendor CSS-->
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/animsition/animsition.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/wow/animate.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/css-hamburgers/hamburgers.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/slick/slick.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/select2/select2.min.css";?>" rel="stylesheet" media="all">
-    <link href="<?php echo "https://thinkkosovo.cleverapps.io/assets/vendor/perfect-scrollbar/perfect-scrollbar.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/animsition/animsition.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/wow/animate.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/css-hamburgers/hamburgers.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/slick/slick.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/select2/select2.min.css";?>" rel="stylesheet" media="all">
+    <link href="<?php echo asset_url()."vendor/perfect-scrollbar/perfect-scrollbar.css";?>" rel="stylesheet" media="all">
 
     <style>
     input[type=datetime-local]::-webkit-inner-spin-button {
@@ -59,9 +59,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
 
-                        <a class="logo" href="<?php echo base_url().'home'; ?>">
+                        <a class="logo" href="<?php echo 'https://thinkkosovo.cleverapps.io/home'; ?>">
 
-                            <img src="<?php echo "https://thinkkosovo.cleverapps.io/assets/images/icon/login2.png";?>" alt="thinkkosovo" />
+                            <img src="<?php echo asset_url()."images/icon/login2.png";?>" alt="thinkkosovo" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -79,13 +79,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <i class="fas fa-history" aria-hidden="true"></i>Map</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                               <li>
-                                  <a href="<?php echo base_url().'museum'; ?>"><i class="fas fa-archway"></i>Museum</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/museum'; ?>"><i class="fas fa-archway"></i>Museum</a>
                               </li>
                               <li>
-                                  <a href="<?php echo base_url().'nature'; ?>"><i class="fas fa-tree"></i>Nature</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/nature'; ?>"><i class="fas fa-tree"></i>Nature</a>
                               </li>
                               <li>
-                                  <a href="<?php echo base_url().'history'; ?>"><i class="fas fa-monument"></i>History</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/history'; ?>"><i class="fas fa-monument"></i>History</a>
                               </li>
 
                             </ul>
@@ -96,7 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <i class="fas fa-heart"></i>Fan</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                  <a href="<?php echo base_url().'fanstory'; ?>"><i class="fas fa-sticky-note"></i>Fan Story</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/fanstory'; ?>"><i class="fas fa-sticky-note"></i>Fan Story</a>
                                 </li>
 
                             </ul>
@@ -107,7 +107,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                   <i class="fas fa-camera-retro"></i>Gallery</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                  <a href="<?php echo base_url().'photo'; ?>"><i class="far fa-images"></i>Photo</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/photo'; ?>"><i class="far fa-images"></i>Photo</a>
                                 </li>
 
                             </ul>
@@ -119,7 +119,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <i class="far fa-calendar-alt"></i>Events</a>
                          <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                       <li>
-                      <a href="<?php echo base_url().'event'; ?>"><i class="fal fa-calendar-day"></i>Event</a>
+                      <a href="<?php echo 'https://thinkkosovo.cleverapps.io/event'; ?>"><i class="fal fa-calendar-day"></i>Event</a>
                       </li>
                        </ul>
                     </li>
@@ -129,25 +129,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <i class="fas fa-compass"></i>Explore</a>
                         <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                           <li>
-                              <a href="<?php echo base_url().'place'; ?>"><i class="fas fa-hotel"></i>Place</a>
+                              <a href="<?php echo 'https://thinkkosovo.cleverapps.io/place'; ?>"><i class="fas fa-hotel"></i>Place</a>
                           </li>
                           <li>
-                              <a href="<?php echo base_url().'food'; ?>"><i class="fas fa-utensils-alt"></i>Food</a>
+                              <a href="<?php echo 'https://thinkkosovo.cleverapps.io/food'; ?>"><i class="fas fa-utensils-alt"></i>Food</a>
                           </li>
                           <li>
-                              <a href="<?php echo base_url().'coffe'; ?>"><i class="fas fa-coffee-togo"></i>Coffe</a>
-                          </li>
-
-                          <li>
-                              <a href="<?php echo base_url().'taxi'; ?>"><i class="fas fa-taxi"></i>Taxi</a>
+                              <a href="<?php echo 'https://thinkkosovo.cleverapps.io/coffe'; ?>"><i class="fas fa-coffee-togo"></i>Coffe</a>
                           </li>
 
                           <li>
-                              <a href="<?php echo base_url().'travelagency'; ?>"><i class="fas fa-bus"></i>Travel Agency</a>
+                              <a href="<?php echo 'https://thinkkosovo.cleverapps.io/taxi'; ?>"><i class="fas fa-taxi"></i>Taxi</a>
                           </li>
 
                           <li>
-                                <a href="<?php echo base_url().'rent'; ?>"><i class="fas fa-car"></i>Rent</a>
+                              <a href="<?php echo 'https://thinkkosovo.cleverapps.io/travelagency'; ?>"><i class="fas fa-bus"></i>Travel Agency</a>
+                          </li>
+
+                          <li>
+                                <a href="<?php echo 'https://thinkkosovo.cleverapps.io/rent'; ?>"><i class="fas fa-car"></i>Rent</a>
                           </li>
 
                         </ul>
@@ -162,9 +162,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="<?php echo base_url().'home'; ?>">
+                <a href="<?php echo 'https://thinkkosovo.cleverapps.io/home'; ?>">
 
-                    <img src="<?php echo "https://thinkkosovo.cleverapps.io/assets/images/icon/login2.png";?>" alt="Cool Admin" />
+                    <img src="<?php echo asset_url()."images/icon/login2.png";?>" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -175,13 +175,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <i class="fas fa-map-marker-alt"></i>Map</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                               <li>
-                                  <a href="<?php echo base_url().'museum'; ?>"><i class="fas fa-archway"></i>Museum</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/museum'; ?>"><i class="fas fa-archway"></i>Museum</a>
                               </li>
                               <li>
-                                  <a href="<?php echo base_url().'nature'; ?>"><i class="fas fa-tree"></i>Nature</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/nature'; ?>"><i class="fas fa-tree"></i>Nature</a>
                               </li>
                               <li>
-                                  <a href="<?php echo base_url().'history'; ?>"><i class="fas fa-monument"></i>History</a>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/history'; ?>"><i class="fas fa-monument"></i>History</a>
                               </li>
 
                             </ul>
@@ -192,7 +192,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                          <i class="fas fa-heart"></i>Fan</a>
                                <ul class="list-unstyled navbar__sub-list js-sub-list">
                                    <li>
-                                       <a href="<?php echo base_url().'fanstory'; ?>"><i class="fas fa-sticky-note"></i>Fan Story</a>
+                                       <a href="<?php echo 'https://thinkkosovo.cleverapps.io/fanstory'; ?>"><i class="fas fa-sticky-note"></i>Fan Story</a>
                                    </li>
                                  </ul>
                        </li>
@@ -202,7 +202,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                        <i class="fas fa-camera-retro"></i>Gallery</a>
                               <ul class="list-unstyled navbar__sub-list js-sub-list">
                                   <li>
-                                      <a href="<?php echo base_url().'photo'; ?>"><i class="far fa-images"></i>Photo</a>
+                                      <a href="<?php echo 'https://thinkkosovo.cleverapps.io/photo'; ?>"><i class="far fa-images"></i>Photo</a>
                                   </li>
                                 </ul>
                       </li> -->
@@ -212,7 +212,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <i class="far fa-calendar-alt"></i>Events</a>
                              <ul class="list-unstyled navbar__sub-list js-sub-list">
                                  <li>
-                                     <a href="<?php echo base_url().'event'; ?>"><i class="fal fa-calendar-day"></i>Event</a>
+                                     <a href="<?php echo 'https://thinkkosovo.cleverapps.io/event'; ?>"><i class="fal fa-calendar-day"></i>Event</a>
                                  </li>
                                </ul>
                      </li>
@@ -222,25 +222,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                          <i class="fas fa-compass"></i>Explore</a>
                          <ul class="list-unstyled navbar__sub-list js-sub-list">
                            <li>
-                               <a href="<?php echo base_url().'place'; ?>"><i class="fas fa-hotel"></i>Place</a>
+                               <a href="<?php echo 'https://thinkkosovo.cleverapps.io/place'; ?>"><i class="fas fa-hotel"></i>Place</a>
                            </li>
                            <li>
-                               <a href="<?php echo base_url().'food'; ?>"><i class="fas fa-utensils-alt"></i>Food</a>
+                               <a href="<?php echo 'https://thinkkosovo.cleverapps.io/food'; ?>"><i class="fas fa-utensils-alt"></i>Food</a>
                            </li>
                            <li>
-                               <a href="<?php echo base_url().'coffe'; ?>"><i class="fas fa-coffee-togo"></i>Coffe</a>
-                           </li>
-
-                           <li>
-                               <a href="<?php echo base_url().'taxi'; ?>"><i class="fas fa-taxi"></i>Taxi</a>
+                               <a href="<?php echo 'https://thinkkosovo.cleverapps.io/coffe'; ?>"><i class="fas fa-coffee-togo"></i>Coffe</a>
                            </li>
 
                            <li>
-                               <a href="<?php echo base_url().'travelagency'; ?>"><i class="fas fa-bus"></i>Travel Agency</a>
+                               <a href="<?php echo 'https://thinkkosovo.cleverapps.io/taxi'; ?>"><i class="fas fa-taxi"></i>Taxi</a>
                            </li>
 
                            <li>
-                                 <a href="<?php echo base_url().'rent'; ?>"><i class="fas fa-car"></i>Rent</a>
+                               <a href="<?php echo 'https://thinkkosovo.cleverapps.io/travelagency'; ?>"><i class="fas fa-bus"></i>Travel Agency</a>
+                           </li>
+
+                           <li>
+                                 <a href="<?php echo 'https://thinkkosovo.cleverapps.io/rent'; ?>"><i class="fas fa-car"></i>Rent</a>
                            </li>
 
                          </ul>
