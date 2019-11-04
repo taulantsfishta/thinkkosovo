@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <span class='text_danger' style="color:white;"><?php echo form_error('password'); ?></span>
                                 </div>
 
-                                <button class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">Sign In</button>
+                                <button class="au-btn au-btn--block1 au-btn--blue m-b-20" type="submit">Sign In</button>
 
                             </form>
 

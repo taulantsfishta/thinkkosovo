@@ -480,6 +480,11 @@ section {
 
 .au-btn--block {
     display: block;
+    width: 100%;
+}
+
+.au-btn--block1 {
+    display: block;
     width: 45%;
     margin-left:30%;
 }
