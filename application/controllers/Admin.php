@@ -1103,7 +1103,7 @@ class Admin extends CI_Controller {
               $returnData = $this->ineed->getIneeddata($getTypename);
               $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_1'=>'','return_message'=>'','error_message_update'=>$this->upload->display_errors(),'return_message_update'=>$returnData_1['message'],'error_message_update_1'=>'','table_data'=>$returnData,'message_deleted'=>'');
               $getTypename   = lcfirst($getTypename);
-              // header( "refresh:3;url=http://thinkkosovo.cleverapps.io/place");
+              header( "refresh:3;url=http://thinkkosovo.cleverapps.io/place");
               $this->load->view('adminpanel/header');
               $this->load->view('adminpanel/ineed/'.$getTypename,$data);
             }else{
