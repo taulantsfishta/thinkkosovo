@@ -134,6 +134,11 @@ class Api {
         $strArray   = explode('_',$latitude_longitude);
         $latitude   = $strArray[0];
         $longitude  = $strArray[1];
+        $gallery    = json_decode($value['gallery'],1);
+        rsort($gallery);
+        foreach($gallery as $key => $value_1){
+          $gallery_1[] =$value_1;
+        }
         $selectedData_1[] =
                                                 [
                                                   'id'                 => $value['id'],
@@ -148,7 +153,7 @@ class Api {
                                                   'url'                => $value['url'],
                                                   'email'              => $value['email'],
                                                   'image'              => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
-                                                  'gallery'            => json_decode($value['gallery']),
+                                                  'gallery'            => $gallery_1,
                                                   'latitude'           => $latitude,
                                                   'longitude'          => $longitude,
                                                ];

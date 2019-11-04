@@ -124,7 +124,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <span class='text_danger' style="color:red;"><?php echo form_error('description'); ?></span>
                             </div>
                             <div class="form-group">
-                                <input class="au-input au-input--full" type="text" name="offer" value="['bed','utensils','cheese','ice-cream','shuttle-van']" hidden>
+                                <input class="au-input au-input--full" type="text" name="offer" value="['bed','utensils','cheese']" hidden>
                                 <span class='text_danger' style="color:red;"><?php echo form_error('offer'); ?></span>
                             </div>
                             <div class="form-group">
