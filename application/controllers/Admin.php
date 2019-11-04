@@ -1096,7 +1096,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type];
+              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->update_data($postData);
               $this->load->library('adminpanel/ineed');

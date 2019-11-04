@@ -249,7 +249,7 @@ class Ineed {
         }else{
           $gallery = $postData['gallery'];
           foreach ($gallery as $key => $value) {
-            $gallerys[]= 'http://localhost/thinkkosovo/uploads/'.$value;
+            $gallerys[]= 'http://thinkkosovo.cleverapps.io/uploads/'.$value;
           }
            $data_to_update = [
                                  'name'               => $postData['name'],
