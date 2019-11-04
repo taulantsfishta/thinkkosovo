@@ -129,7 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                             <div class="form-group">
                               <select required id="sel1"  class="selectform"  name='stars'>
-                                <option value='' selected disabled>How many stars? Selectt</option>
+                                <option value='' selected disabled>How many stars? Select</option>
                                 <option value='3.0'>3.0</option>
                                 <option value='3.1'>3.1</option>
                                 <option value='3.2'>3.2</option>
@@ -286,9 +286,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <div class='form-group'>
                                                 <textarea class='textareaclass' style ='width:100%;'  name='descriptionupdate' placeholder='Description' pattern='.{3,1000}' required title='3 to 1000 characters'>".$value['description']."</textarea>
-                                            </div>
-                                            <div class='form-group'>
-                                                <input class='au-input au-input--full' type='text' name='offerupdate' value='['bed','utensils','cheese','ice-cream','shuttle-van']' hidden>
                                             </div>
                                             <div class='form-group'>
                                               <select  id='sel1'  class='selectform'  name='starsupdate'>

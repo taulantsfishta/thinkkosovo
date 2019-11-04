@@ -288,9 +288,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <textarea class='textareaclass' style ='width:100%;'  name='descriptionupdate' placeholder='Description' pattern='.{3,1000}' required title='3 to 1000 characters'>".$value['description']."</textarea>
                                             </div>
                                             <div class='form-group'>
-                                                <input class='au-input au-input--full' type='text' name='offerupdate' value='['bed','utensils','cheese','ice-cream','shuttle-van']' hidden>
-                                            </div>
-                                            <div class='form-group'>
                                               <select  id='sel1'  class='selectform'  name='starsupdate'>
                                                 <option selected >".$value['stars']."</option>
                                                 <option value='3.0'>3.0</option>

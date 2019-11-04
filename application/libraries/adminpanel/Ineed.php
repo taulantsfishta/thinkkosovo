@@ -259,7 +259,6 @@ class Ineed {
                                  'description'        => $postData['description'],
                                  'image'              => $postData['image'],
                                  'gallery'            => json_encode($gallerys),
-                                 'offer'              => $postData['offer'],
                                  'stars'              => $postData['stars'],
                                  'type'               => $postData['type'],
                                  'url'                => $postData['url'],

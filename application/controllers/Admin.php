@@ -1066,7 +1066,6 @@ class Admin extends CI_Controller {
               $stars          = $this->input->post('starsupdate');
               $latitude       = $this->input->post('latitudeupdate');
               $longitude      = $this->input->post('longitudeupdate');
-              $offer          = $this->input->post('offerupdate');
               $type           = $this->input->post('type_ineedupdate');
               $url            = $this->input->post('urlupdate');
               $email          = $this->input->post('emailupdate');
@@ -1096,7 +1095,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->update_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -1386,7 +1385,6 @@ class Admin extends CI_Controller {
               $stars          = $this->input->post('starsupdate');
               $latitude       = $this->input->post('latitudeupdate');
               $longitude      = $this->input->post('longitudeupdate');
-              $offer          = $this->input->post('offerupdate');
               $type           = $this->input->post('type_ineedupdate');
               $url            = $this->input->post('urlupdate');
               $email          = $this->input->post('emailupdate');
@@ -1416,7 +1414,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->update_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -1705,7 +1703,6 @@ class Admin extends CI_Controller {
               $stars          = $this->input->post('starsupdate');
               $latitude       = $this->input->post('latitudeupdate');
               $longitude      = $this->input->post('longitudeupdate');
-              $offer          = $this->input->post('offerupdate');
               $type           = $this->input->post('type_ineedupdate');
               $url            = $this->input->post('urlupdate');
               $email          = $this->input->post('emailupdate');
@@ -1735,7 +1732,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->update_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -2027,7 +2024,7 @@ class Admin extends CI_Controller {
                     $stars          = $this->input->post('starsupdate');
                     $latitude       = $this->input->post('latitudeupdate');
                     $longitude      = $this->input->post('longitudeupdate');
-                    $offer          = $this->input->post('offerupdate');
+    
                     $type           = $this->input->post('type_ineedupdate');
                     $url            = $this->input->post('urlupdate');
                     $email          = $this->input->post('emailupdate');
@@ -2058,7 +2055,7 @@ class Admin extends CI_Controller {
                       }
 
                     }
-                    $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+                    $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
                     $this->load->library('adminpanel/ineed');
                     $returnData_1     = $this->ineed->update_data($postData);
                     $this->load->library('adminpanel/ineed');
