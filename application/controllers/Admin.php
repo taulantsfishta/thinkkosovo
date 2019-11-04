@@ -861,7 +861,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('name','Place Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contact','Contact','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('stars','Star of Place','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('url','Url','xss_clean');
@@ -1021,7 +1021,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('nameupdate','Place Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contactupdate','Contact','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('starsupdate','Star of Place','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('urlupdate','Url','xss_clean');
@@ -1182,7 +1182,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('name','Travel Agency Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contact','Contact','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('stars','Star of Travel Agency','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('url','Url','xss_clean');
@@ -1341,7 +1341,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('nameupdate','Travel Agency Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contactupdate','Contact','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('starsupdate','Star of Travel Agency','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('updateurl','Url','xss_clean');
@@ -1500,7 +1500,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('name','Food Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contact','Contact','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('stars','Star of Food Service','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('url','Url','xss_clean');
@@ -1659,7 +1659,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('nameupdate','Food Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contactupdate','Contact','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('starsupdate','Star of Food Service','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('urlupdate','Url','xss_clean');
@@ -1820,7 +1820,7 @@ class Admin extends CI_Controller {
              $this->form_validation->set_rules('name','Coffe Name','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
              $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-             $this->form_validation->set_rules('contact','Contact','required|xss_clean|min_length[3]|max_length[500]');
+             $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
              $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
              $this->form_validation->set_rules('stars','Star of Coffe Service','required|xss_clean|min_length[3]|max_length[4]');
              $this->form_validation->set_rules('url','Url','xss_clean');
@@ -1980,7 +1980,7 @@ class Admin extends CI_Controller {
              $this->form_validation->set_rules('nameupdate','Coffe Name','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
              $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-             $this->form_validation->set_rules('contactupdate','Contact','required|xss_clean|min_length[3]|max_length[500]');
+             $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
              $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
              $this->form_validation->set_rules('starsupdate','Star of Coffe Service','required|xss_clean|min_length[3]|max_length[4]');
              $this->form_validation->set_rules('urlupdate','Url','xss_clean');
