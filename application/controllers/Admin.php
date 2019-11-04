@@ -847,7 +847,6 @@ class Admin extends CI_Controller {
 
 
   function register_place($getTypename=''){
-
     if($this->session->userdata('username') != ''){
      if($this->input->post()==null){
        $this->load->library('adminpanel/ineed');
@@ -893,7 +892,7 @@ class Admin extends CI_Controller {
             }
           }else{
             if(($_FILES['gallery']['name'][0]) != ''){
-              $image_info     = $this->upload->data();
+
               $image_info     = $this->upload->data();
               $image_name     = $image_info['file_name'];
               $name           = $this->input->post('name');

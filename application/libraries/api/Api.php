@@ -52,7 +52,7 @@ class Api {
                                                  'eventStatus'     => 'ended',
                                                  'latitude'        => $latitude,
                                                  'longitude'       => $longitude,
-                                                 'image'           => "http://192.168.0.14/thinkkosovo/uploads/".$value['image'],
+                                                 'image'           => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
                                                  'type'            => $value['type'],
                                                  'url'             => $value['url'],
                                                ];
@@ -71,7 +71,7 @@ class Api {
                                                  'eventStatus'     => 'happening',
                                                  'latitude'        => $latitude,
                                                  'longitude'       => $longitude,
-                                                 'image'           => "http://192.168.0.14/thinkkosovo/uploads/".$value['image'],
+                                                 'image'           => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
                                                  'type'            => $value['type'],
                                                  'url'             => $value['url'],
                                                ];
@@ -89,7 +89,7 @@ class Api {
                                                  'eventStatus'     => 'upcoming',
                                                  'latitude'        => $latitude,
                                                  'longitude'       => $longitude,
-                                                 'image'           => "http://192.168.0.14/thinkkosovo/uploads/".$value['image'],
+                                                 'image'           => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
                                                  'type'            => $value['type'],
                                                  'url'             => $value['url'],
                                                ];
@@ -114,7 +114,7 @@ class Api {
                                                   'telephone'          => $value['telephone'],
                                                   'city'               => $value['city'],
                                                   'stars'              => $value['stars'],
-                                                  'image'              => $value['image'],
+                                                  'image'              => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
                                                   'type'               => $value['type'],
                                                ];
         }elseif($value['type']=='Rent'){
@@ -125,7 +125,7 @@ class Api {
                                                   'telephone'          => $value['telephone'],
                                                   'location'           => $value['location'],
                                                   'city'               => $value['city'],
-                                                  'image'              => $value['image'],
+                                                  'image'              => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
                                                   'type'               => $value['type'],
                                                ];
         }else{
@@ -144,6 +144,8 @@ class Api {
                                                   'offer'              => $value['offer'],
                                                   'stars'              => $value['stars'],
                                                   'type'               => $value['type'],
+                                                  'image'              => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
+                                                  'gallery'            => json_decode($value['gallery']),
                                                   'latitude'           => $latitude,
                                                   'longitude'          => $longitude,
                                                ];
@@ -154,7 +156,7 @@ class Api {
       }else{
       $returnData[]= false;
     }
-    $returnData =[json_encode($selectedData),json_encode($selectedData_1)];
+    $returnData =[[json_encode($selectedData)],[json_encode($selectedData_1)]];
     return $returnData;
   }
 
