@@ -499,7 +499,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           var latitudeupdate        = "<?php echo form_error('latitudeupdate'); ?>";
           var longitudepdate        = "<?php echo form_error('longitudepdate'); ?>";
 
-
           var str                   = error_message_update +',' + nameupdate + ',' + placeupdate + ',' + cityupdate + ',' + startdateupdate+ ',' + enddateupdate + ','+ infoupdate +','+typeupdate+ ','+ latitudeupdate +','+longitudepdate;
           var array                 = str.split(",");
           var newArray              = [];

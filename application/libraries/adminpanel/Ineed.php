@@ -56,7 +56,7 @@ class Ineed {
     }else{
       $gallery = $postData['gallery'];
       foreach ($gallery as $key => $value) {
-        $gallerys[]= 'http://localhost/thinkkosovo/uploads/'.$value;
+        $gallerys[]= 'https://thinkkosovo.cleverapps.io/uploads/'.$value;
       }
        $insertData_ineed = [
                              'name'               => $postData['name'],
@@ -69,6 +69,8 @@ class Ineed {
                              'offer'              => $postData['offer'],
                              'stars'              => $postData['stars'],
                              'type'               => $postData['type'],
+                             'url'                => $postData['url'],
+                             'email'              => $postData['email'],
                              'latitude_longitude' => $postData['latitude'].'_'.$postData['longitude'],
                              'created_at'         => date('Y-m-d H:i:s'),
                              'updated_at'         => date('Y-m-d H:i:s')
@@ -169,6 +171,8 @@ class Ineed {
                                             'offer'              => $value['offer'],
                                             'stars'              => $value['stars'],
                                             'type'               => $value['type'],
+                                            'url'                => $value['url'],
+                                            'email'              => $value['email'],
                                             'latitude'           => $latitude,
                                             'longitude'          => $longitude,
                                             'created_at'         => date('Y-m-d H:i:s'),
@@ -186,6 +190,8 @@ class Ineed {
                                             'offer'              => '',
                                             'stars'              => '',
                                             'type'               => '',
+                                            'url'                => '',
+                                            'email'              => '',
                                             'latitude'           => '',
                                             'longitude'          => '',
                                             'created_at'         => '',
@@ -256,6 +262,8 @@ class Ineed {
                                  'offer'              => $postData['offer'],
                                  'stars'              => $postData['stars'],
                                  'type'               => $postData['type'],
+                                 'url'                => $postData['url'],
+                                 'email'              => $postData['email'],
                                  'latitude_longitude' => $postData['latitude'].'_'.$postData['longitude'],
                                  'updated_at'         => date('Y-m-d H:i:s')
                                  ];

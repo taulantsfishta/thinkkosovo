@@ -26,7 +26,8 @@ class Api {
   function getAppdata($getData   = ''){
 
     $select_events = $this->ci->db->select('*')->from('event')->order_by('enddate','desc')->get()->result_array();
-    
+    selectedData =[];
+    selectedData_1 =[];
     // $returnData =[];
     if(null != $select_events){
       foreach ($select_events as $key => $value) {
@@ -144,6 +145,8 @@ class Api {
                                                   'offer'              => $value['offer'],
                                                   'stars'              => $value['stars'],
                                                   'type'               => $value['type'],
+                                                  'url'                => $value['url'],
+                                                  'email'              => $value['email'],
                                                   'image'              => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
                                                   'gallery'            => json_decode($value['gallery']),
                                                   'latitude'           => $latitude,

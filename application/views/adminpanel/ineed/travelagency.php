@@ -159,6 +159,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <input class="au-input au-input--full" type="text" name="type_ineed" value="Travelagency" hidden>
                                 <span class='text_danger' style="color:red;"><?php echo form_error('type_ineed'); ?></span>
                             </div>
+                            <div class='form-group'>
+                                <input class='au-input au-input--full' type='text' name='url' placeholder='Website of Travel Agency (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
+                                <span class='text_danger' style='color:red;'><?php echo form_error('url'); ?></span>
+                            </div>
+                            <div class='form-group'>
+                                <input class='au-input au-input--full' type='text' name='email' placeholder='Email of Travel Agency (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
+                                <span class='text_danger' style='color:red;'><?php echo form_error('email'); ?></span>
+                            </div>
                             <div class="form-group">
                                 <input class="au-input au-input--full" type="text" name="latitude" step="any" placeholder="Latitude(42.662651)" pattern='.{3,50}' required title='3 to 50 characters'>
                                 <span class='text_danger' style="color:red;"><?php echo form_error('latitude'); ?></span>
@@ -311,6 +319,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <div class='form-group'>
                                                 <input class='au-input au-input--full' type='text' name='type_ineedupdate' value='Travelagency' hidden>
+                                            </div>
+                                            <div class='form-group'>
+                                                <input class='au-input au-input--full' type='text' name='urlupdate' value='".$value['url']."' placeholder='Website of Travel Agency (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
+                                                <span class='text_danger' style='color:red;'><?php echo form_error('url'); ?></span>
+                                            </div>
+                                            <div class='form-group'>
+                                                <input class='au-input au-input--full' type='text' name='emailupdate' value='".$value['email']."' placeholder='Email of Travel Agency (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
+                                                <span class='text_danger' style='color:red;'><?php echo form_error('email'); ?></span>
                                             </div>
                                             <div class='form-group'>
                                                 <input class='au-input au-input--full' type='text' name='latitudeupdate' value='".$value['latitude']."' step='any' placeholder='Latitude(42.662651)' pattern='.{3,50}' required title='3 to 50 characters'>

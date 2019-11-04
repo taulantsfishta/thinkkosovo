@@ -158,6 +158,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <input class="au-input au-input--full" type="text" name="type_ineed" value="Place" hidden>
                                 <span class='text_danger' style="color:red;"><?php echo form_error('type_ineed'); ?></span>
                             </div>
+                            <div class='form-group'>
+                                <input class='au-input au-input--full' type='text' name='url' placeholder='Website of Place (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
+                                <span class='text_danger' style='color:red;'><?php echo form_error('url'); ?></span>
+                            </div>
+                            <div class='form-group'>
+                                <input class='au-input au-input--full' type='text' name='email' placeholder='Email of place (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
+                                <span class='text_danger' style='color:red;'><?php echo form_error('email'); ?></span>
+                            </div>
                             <div class="form-group">
                                 <input class="au-input au-input--full" type="text" name="latitude" step="any" placeholder="Latitude(42.662651)" pattern='.{3,50}' required title='3 to 50 characters'>
                                 <span class='text_danger' style="color:red;"><?php echo form_error('latitude'); ?></span>
@@ -195,12 +203,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class='row'>
                       <div class='col-md-6'>
                           <div class="image">
-                          <img src="<?php echo asset_url()."images/icon/hotel.png";?>" alt="event" />
+                          <img src="<?php echo asset_url()."images/icon/hotel.png";?>" alt="place" />
                           </div>
                       </div>
                       <div class='col-md-6'>
                         <div class="image">
-                        <img src="<?php echo asset_url()."images/icon/hotel1.png";?>" alt="event" />
+                        <img src="<?php echo asset_url()."images/icon/hotel1.png";?>" alt="place" />
                         </div>
                       </div>
 
@@ -310,6 +318,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <div class='form-group'>
                                                 <input class='au-input au-input--full' type='text' name='type_ineedupdate' value='Place' hidden>
+                                            </div>
+                                             <div class='form-group'>
+                                                <input class='au-input au-input--full' type='text' name='urlupdate' placeholder='Website of Place (Optional)' value='".$value['url']."' pattern='.{3,100}' title='3 to 100 characters'>
+                                                <span class='text_danger' style='color:red;'><?php echo form_error('url'); ?></span>
+                                            </div>
+                                            <div class='form-group'>
+                                                <input class='au-input au-input--full' type='text' name='emailupdate' placeholder='Email of Place (Optional)' value='".$value['email']."' pattern='.{3,100}' title='3 to 100 characters'>
+                                                <span class='text_danger' style='color:red;'><?php echo form_error('email'); ?></span>
                                             </div>
                                             <div class='form-group'>
                                                 <input class='au-input au-input--full' type='text' name='latitudeupdate' value='".$value['latitude']."' step='any' placeholder='Latitude(42.662651)' pattern='.{3,50}' required title='3 to 50 characters'>
