@@ -26,8 +26,8 @@ class Api {
   function getAppdata($getData   = ''){
 
     $select_events = $this->ci->db->select('*')->from('event')->order_by('enddate','desc')->get()->result_array();
-    selectedData =[];
-    selectedData_1 =[];
+    $selectedData =[];
+    $selectedData_1 =[];
     // $returnData =[];
     if(null != $select_events){
       foreach ($select_events as $key => $value) {
