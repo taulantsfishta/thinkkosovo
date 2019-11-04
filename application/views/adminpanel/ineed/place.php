@@ -163,7 +163,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <span class='text_danger' style='color:red;'><?php echo form_error('url'); ?></span>
                             </div>
                             <div class='form-group'>
-                                <input class='au-input au-input--full' type='text' name='email' placeholder='Email of place (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
+                                <input class='au-input au-input--full' type='text' name='email' placeholder='Email of Place (Optional)' pattern='.{3,100}' title='3 to 100 characters'>
                                 <span class='text_danger' style='color:red;'><?php echo form_error('email'); ?></span>
                             </div>
                             <div class="form-group">
