@@ -87,6 +87,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   $route['history/(:any)/(:any)']                                  = "admin/history/$1/$2";
   $route['history/(:any)/(:any)/(:any)']                           = "admin/history/$1/$2/$3";
 
+  $route['attraction']                                             = 'admin/attraction';
+  $route['attraction/(:any)']                                      = 'admin/attraction/$1';
+  $route['attraction/(:any)/(:any)']                               = "admin/attraction/$1/$2";
+  $route['attraction/(:any)/(:any)/(:any)']                        = "admin/attraction/$1/$2/$3";
+
   $route['club']                                                   = 'admin/club';
   $route['club/(:any)']                                            = 'admin/club/$1';
   $route['club/(:any)/(:any)']                                     = "admin/club/$1/$2";
