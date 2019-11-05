@@ -853,14 +853,13 @@ class Admin extends CI_Controller {
            }else{
              $this->load->library('form_validation');
              $this->form_validation->set_rules('nameupdate','Banner Name','required|xss_clean|min_length[3]|max_length[100]');
-
              $config['upload_path']   = 'uploads/';
              $config['allowed_types'] = 'jpg|jpeg|png|gif';
              $config['encrypt_name']  = FALSE;
              $this->load->library('upload', $config);
              $this->upload->initialize($config);
             if(($this->form_validation->run())){
-                if(!($this->upload->do_upload('image'))){
+                if(!($this->upload->do_upload('imageupdate'))){
                   $this->load->library('adminpanel/event');
                   $returnData = $this->event->getBannerdata($getTypename);
                   $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
