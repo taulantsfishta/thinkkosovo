@@ -121,7 +121,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               <span class='text_danger' style="color:red;"><?php echo form_error('location'); ?></span>
                             </div>
                             <div class="form-group">
-                              <textarea class="au-input au-input--full" style ="width:100%;"  name="description" placeholder="Description" pattern='.{3,500}' required title='3 to 500 characters'></textarea>
+                              <textarea class="au-input au-input--full" style ="width:100%;"  name="description" placeholder="Description" pattern='.{3,2000}' required title='3 to 2000 characters'></textarea>
                               <span class='text_danger' style="color:red;"><?php echo form_error('description'); ?></span>
                             </div>
                             <div class="form-group">
@@ -276,7 +276,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </select>
                                           </div>
                                           <div class='form-group'>
-                                            <textarea class='au-input au-input--full' style ='width:100%;'  name='descriptionupdate' placeholder='Description' pattern='.{3,500}' required title='3 to 500 characters'>".$value['description']."</textarea>
+                                            <textarea class='au-input au-input--full' style ='width:100%;'  name='descriptionupdate' placeholder='Description' pattern='.{3,2000}' required title='3 to 2000 characters'>".$value['description']."</textarea>
                                           </div>
                                           <div class='form-group'>
                                               <input class='au-input au-input--full' type='text' name='addressupdate' value='".$value['address']."' placeholder='Address' pattern='.{3,100}' required title='3 to 100 characters'>

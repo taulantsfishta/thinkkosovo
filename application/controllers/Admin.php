@@ -143,7 +143,7 @@ class Admin extends CI_Controller {
              $this->load->library('form_validation');
              $this->form_validation->set_rules('name',$getTypename.' name','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('location','City','required|xss_clean|min_length[3]|max_length[100]');
-             $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[500]');
+             $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[2000]');
              $this->form_validation->set_rules('address','Address','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('work_time','Work Time','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('latitude','Latitude','required|xss_clean|min_length[3]|max_length[50]');
@@ -229,7 +229,7 @@ class Admin extends CI_Controller {
              $this->load->library('form_validation');
              $this->form_validation->set_rules('nameupdate',$getTypename.' name','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('locationupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-             $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[500]');
+             $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[2000]');
              $this->form_validation->set_rules('addressupdate','Address','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('work_timeupdate','Work Time','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('latitudeupdate','Latitude','required|xss_clean|min_length[3]|max_length[50]');
