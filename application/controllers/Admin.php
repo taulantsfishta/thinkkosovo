@@ -549,7 +549,7 @@ class Admin extends CI_Controller {
 
     if($this->session->userdata('username') != ''){
       $this->load->library('adminpanel/event');
-      $returnData = $this->event->getEventdata($getTypename);
+      $returnData = $this->event->getBannerdata($getTypename);
       $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
       $getTypename   = lcfirst($getTypename);
       $this->load->view('adminpanel/header');
