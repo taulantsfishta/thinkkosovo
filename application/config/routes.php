@@ -167,6 +167,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   $route['deleteeventdata/(:any)/(:any)']                          = "admin/deleteeventdata/$1/$2";
   $route['deleteeventdata/(:any)/(:any)/(:any)']                   = "admin/deleteeventdata/$1/$2/$3";
 
+  $route['banner']                                                 = 'admin/banner';
+  $route['banner/(:any)']                                          = 'admin/banner/$1';
+  $route['banner/(:any)/(:any)']                                   = "admin/banner/$1/$2";
+  $route['banner/(:any)/(:any)/(:any)']                            = "admin/banner/$1/$2/$3";
+
+  $route['register_banner']                                        = 'admin/register_banner';
+  $route['register_banner/(:any)']                                 = 'admin/register_banner/$1';
+  $route['register_banner/(:any)/(:any)']                          = "admin/register_banner/$1/$2";
+  $route['register_banner/(:any)/(:any)/(:any)']                   = "admin/register_banner/$1/$2/$3";
+
+  $route['updatebannerdata']                                       = 'admin/updatebannerdata';
+  $route['updatebannerdata/(:any)']                                = 'admin/updatebannerdata/$1';
+  $route['updatebannerdata/(:any)/(:any)']                         = "admin/updatebannerdata/$1/$2";
+  $route['updatebannerdata/(:any)/(:any)/(:any)']                  = "admin/updatebannerdata/$1/$2/$3";
+
+  $route['deletebannerdata']                                       = 'admin/deletebannerdata';
+  $route['deletebannerdata/(:any)']                                = 'admin/deletebannerdata/$1';
+  $route['deletebannerdata/(:any)/(:any)']                         = "admin/deletebannerdata/$1/$2";
+  $route['deletebannerdata/(:any)/(:any)/(:any)']                  = "admin/deletebannerdata/$1/$2/$3";
+
   $route['place']                                                  = 'admin/place';
   $route['place/(:any)']                                           = 'admin/place/$1';
   $route['place/(:any)/(:any)']                                    = "admin/place/$1/$2";

@@ -150,4 +150,98 @@ class Event {
 
   }
 
+  /*-----------------Banner------------------------*/
+
+    public function register_data_banner($postData='')
+  {
+    $getData = $this->ci->db->select('*')
+                           ->from('banner')
+                           ->where('name',$postData['name'])
+                           ->get()
+                           ->result_array();
+    if($getData){
+       $data   = ['message'=>"Data are saved!"];
+    }else{
+      $insertData_photo = [
+                            'name'                 => $postData['name'],
+                            'image'                => $postData['image'],
+                            'created_at'           => date('Y-m-d H:i:s'),
+                            'updated_at'           => date('Y-m-d H:i:s')
+                            ]     ;
+       $insertDb             = $this->ci->db->insert('banner',$insertData_photo);
+       if($insertDb){
+         $data   = ['message'=>"Data are saved!"];
+       }else{
+         $data   = ['message'=>"An error has happened!"];
+       }
+    }
+
+     return $data;
+  }
+  // //
+  public function getBannerdata($type_name)
+  {
+     $getData = $this->ci->db->select('*')
+                            ->from('banner')
+                            ->order_by('id','desc')
+                            ->get()
+                            ->result_array();
+      if(NULL != $getData ){
+        foreach ($getData as $key => $value) {
+
+          $returnData []  = [
+                            'id'              => $value['id'],
+                            'name'            => $value['name'],
+                            'image'           => $value['image'],
+                            'created_at'      => $value['created_at'],
+                            'updated_at'      => $value['updated_at'],
+                          ];
+        }
+      }else{
+        $returnData []  = [
+                            'id'              => '',
+                            'name'            => '',
+                            'image'           => '',
+                            'created_at'      => '',
+                            'updated_at'      => '',
+                        ];
+      }
+
+      return $returnData;
+
+  }
+
+  public function update_data_banner($postData='')
+  {
+        $data_to_update          = [
+                                        'name'               => $postData['name'],
+                                        'image'              => $postData['image'],
+                                        'updated_at'         => date('Y-m-d H:i:s')
+                                   ];
+
+        $this->ci->db->set($data_to_update);
+        $this->ci->db->where('id',$postData['id']);
+        $are_data_updated        = $this->ci->db->update('banner');
+
+     if($are_data_updated){
+       $data   = ['message'=>"Data are updated!"];
+     }else{
+       $data   = ['message'=>"An error has happened!"];
+     }
+     return $data;
+  }
+
+  public function deleteBannerdata($row_id)
+  {
+    $this->ci->db->where('id',$row_id);
+    $id_row_deleted = $this->ci->db->delete('banner');
+    if($id_row_deleted){
+         $data   = ['message'=>"Row is deleted!"];
+    }else{
+         $data   = ['message'=>"An error has happened!"];
+    }
+    return $data;
+
+  }
+
 }

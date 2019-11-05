@@ -124,6 +124,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <li>
                       <a href="<?php echo 'https://thinkkosovo.cleverapps.io/event'; ?>"><i class="fal fa-calendar-day"></i>Event</a>
                       </li>
+                      <li>
+                      <a href="<?php echo 'https://thinkkosovo.cleverapps.io/banner'; ?>"><i class="fas fa-pennant"></i>Banner</a>
+                      </li>
                        </ul>
                     </li>
 
@@ -219,6 +222,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                              <ul class="list-unstyled navbar__sub-list js-sub-list">
                                  <li>
                                      <a href="<?php echo 'https://thinkkosovo.cleverapps.io/event'; ?>"><i class="fal fa-calendar-day"></i>Event</a>
+                                 </li>
+                                 <li>
+                                     <a href="<?php echo 'https://thinkkosovo.cleverapps.io/banner'; ?>"><i class="fas fa-pennant"></i>Banner</a>
                                  </li>
                                </ul>
                      </li>

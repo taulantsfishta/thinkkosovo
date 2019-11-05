@@ -25,10 +25,10 @@ class Api {
 
   function getAppdata($getData   = ''){
 
-    $select_events = $this->ci->db->select('*')->from('event')->order_by('enddate','desc')->get()->result_array();
-    $selectedData =[];
-    $selectedData_1 =[];
-    // $returnData =[];
+    $select_events  = $this->ci->db->select('*')->from('event')->order_by('enddate','desc')->get()->result_array();
+    $selectedData   = [];
+    $selectedData_1 = [];
+    $selectedData_2 = [];
     if(null != $select_events){
       foreach ($select_events as $key => $value) {
         $latitude_longitude = $value['latitude_longitude'];
@@ -99,14 +99,14 @@ class Api {
 
 
       }else{
-      $returnData []= false;
+      $selectedData[] =false;
     } 
 
-    $select_ineed = $this->ci->db->select('*')->from('ineed')->order_by('id','desc')->get()->result_array();
+    $select_explore = $this->ci->db->select('*')->from('ineed')->order_by('id','desc')->get()->result_array();
 
 
-    if(null != $select_ineed){
-      foreach ($select_ineed as $key => $value) {
+    if(null != $select_explore){
+      foreach ($select_explore as $key => $value) {
         if($value['type']=='Taxi'){
           $selectedData_1[] =
                                                 [
@@ -162,9 +162,38 @@ class Api {
 
       
       }else{
-      $returnData[]= false;
+      $selectedData_1[]= false;
     }
-    $returnData =[[json_encode($selectedData)],[json_encode($selectedData_1)]];
+
+    $select_map = $this->ci->db->select('*')->from('historyandculture')->order_by('id','desc')->get()->result_array();
+    if(null != $select_map){
+      foreach ($select_map as $key => $value) {
+        $latitude_longitude = $value['latitude_longitude'];
+        $strArray   = explode('_',$latitude_longitude);
+        $latitude   = $strArray[0];
+        $longitude  = $strArray[1];
+        $selectedData_2[] =
+                           [
+                            'id'              => $value['id'],
+                            'name'            => $value['name'],
+                            'type_name'       => $value['type_name'],
+                            'location'        => $value['location'],
+                            'description'     => $value['description'],
+                            'address'         => $value['address'],
+                            'work_time'       => $value['work_time'],
+                            'latitude'        => $latitude,
+                            'longitude'       => $longitude,
+                            'image'           => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
+                            'created_at'      => $value['created_at'],
+                            'updated_at'      => $value['updated_at'],
+                          ];
+      
+        }
+
+      }else{
+      $selectedData_2[]= false;
+    }
+    $returnData =[[json_encode($selectedData)],[json_encode($selectedData_1)],[json_encode($selectedData_2)]];
     return $returnData;
   }
 

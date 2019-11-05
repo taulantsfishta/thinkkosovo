@@ -545,6 +545,20 @@ class Admin extends CI_Controller {
     }
   }
 
+   function banner($getTypename='Banner'){
+
+    if($this->session->userdata('username') != ''){
+      $this->load->library('adminpanel/event');
+      $returnData = $this->event->getEventdata($getTypename);
+      $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+      $getTypename   = lcfirst($getTypename);
+      $this->load->view('adminpanel/header');
+      $this->load->view('adminpanel/event/'.$getTypename,$data);
+    }else{
+      redirect('https://thinkkosovo.cleverapps.io/admin');
+    }
+  }
+
   function register_event($getTypename=''){
           if($this->session->userdata('username') != ''){
            if($this->input->post()==null){
@@ -754,6 +768,150 @@ class Admin extends CI_Controller {
 
   }
 
+  function register_banner($getTypename=''){
+          if($this->session->userdata('username') != ''){
+           if($this->input->post()==null){
+             $this->load->library('adminpanel/event');
+             $returnData = $this->event->getBannerdata($getTypename);
+             $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+             $getTypename   = lcfirst($getTypename);
+             header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+             $this->load->view('adminpanel/header');
+             $this->load->view('adminpanel/event/'.$getTypename,$data);
+           }else{
+             $this->load->library('form_validation');
+             $this->form_validation->set_rules('name','Banner Name','required|xss_clean|min_length[3]|max_length[100]');
+
+             $config['upload_path']   = 'uploads/';
+             $config['allowed_types'] = 'jpg|jpeg|png|gif';
+             $config['encrypt_name']  = FALSE;
+             $this->load->library('upload', $config);
+             $this->upload->initialize($config);
+            if(($this->form_validation->run())){
+                if(!($this->upload->do_upload('image'))){
+                  $this->load->library('adminpanel/event');
+                  $returnData = $this->event->getBannerdata($getTypename);
+                  $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                  $getTypename   = lcfirst($getTypename);
+                  header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                  $this->load->view('adminpanel/header');
+                  $this->load->view('adminpanel/event/'.$getTypename,$data);
+                }else{
+                  $image_info     = $this->upload->data();
+                  $image_name     = $image_info['file_name'];
+                  $name           = $this->input->post('name');
+                  $postData       = ['image'=>$image_name,'name'=>$name];
+                  $this->load->library('adminpanel/event');
+                  $returnData_1     = $this->event->register_data_banner($postData);
+                  $this->load->library('adminpanel/event');
+                  $returnData = $this->event->getBannerdata($getTypename);
+                  $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>$returnData_1['message'],'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                  $getTypename   = lcfirst($getTypename);
+                  header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                  $this->load->view('adminpanel/header');
+                  $this->load->view('adminpanel/event/'.$getTypename,$data);
+
+                }
+             }else{
+                  if(!($this->upload->do_upload('image'))){
+                    $this->load->library('adminpanel/event');
+                    $returnData = $this->event->getBannerdata($getTypename);
+                    $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                    $getTypename   = lcfirst($getTypename);
+                    header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                    $this->load->view('adminpanel/header');
+                    $this->load->view('adminpanel/event/'.$getTypename,$data);
+                  }else{
+                    $this->load->library('adminpanel/event');
+                    $returnData = $this->event->getBannerdata($getTypename);
+                    $image = $this->upload->data();
+                    unlink('uploads/'.$image['file_name']);
+                    $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                    $getTypename   = lcfirst($getTypename);
+                    header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                    $this->load->view('adminpanel/header');
+                    $this->load->view('adminpanel/event/'.$getTypename,$data);
+                  }
+            }
+           }
+
+        }else{
+            redirect('https://thinkkosovo.cleverapps.io/admin');
+        }
+  }
+
+    function updatebannertdata($getTypename=''){
+          if($this->session->userdata('username') != ''){
+           if($this->input->post()==null){
+             $this->load->library('adminpanel/event');
+             $returnData = $this->event->getBannerdata($getTypename);
+             $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+             $getTypename   = lcfirst($getTypename);
+             header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+             $this->load->view('adminpanel/header');
+             $this->load->view('adminpanel/event/'.$getTypename,$data);
+           }else{
+             $this->load->library('form_validation');
+             $this->form_validation->set_rules('nameupdate','Banner Name','required|xss_clean|min_length[3]|max_length[100]');
+
+             $config['upload_path']   = 'uploads/';
+             $config['allowed_types'] = 'jpg|jpeg|png|gif';
+             $config['encrypt_name']  = FALSE;
+             $this->load->library('upload', $config);
+             $this->upload->initialize($config);
+            if(($this->form_validation->run())){
+                if(!($this->upload->do_upload('image'))){
+                  $this->load->library('adminpanel/event');
+                  $returnData = $this->event->getBannerdata($getTypename);
+                  $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                  $getTypename   = lcfirst($getTypename);
+                  header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                  $this->load->view('adminpanel/header');
+                  $this->load->view('adminpanel/event/'.$getTypename,$data);
+                }else{
+                  $image_info     = $this->upload->data();
+                  $image_name     = $image_info['file_name'];
+                  $name           = $this->input->post('nameupdate');
+                  $postData       = ['image'=>$image_name,'name'=>$name];
+                  $this->load->library('adminpanel/event');
+                  $returnData_1     = $this->event->update_data_banner($postData);
+                  $this->load->library('adminpanel/event');
+                  $returnData = $this->event->getBannerdata($getTypename);
+                  $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>$returnData_1['message'],'return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                  $getTypename   = lcfirst($getTypename);
+                  header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                  $this->load->view('adminpanel/header');
+                  $this->load->view('adminpanel/event/'.$getTypename,$data);
+
+                }
+             }else{
+                  if(!($this->upload->do_upload('image'))){
+                    $this->load->library('adminpanel/event');
+                    $returnData = $this->event->getBannerdata($getTypename);
+                    $data =array('username' =>  $this->session->userdata('username'),'error_message'=> $this->upload->display_errors(),'error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                    $getTypename   = lcfirst($getTypename);
+                    header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                    $this->load->view('adminpanel/header');
+                    $this->load->view('adminpanel/event/'.$getTypename,$data);
+                  }else{
+                    $this->load->library('adminpanel/event');
+                    $returnData = $this->event->getBannerdata($getTypename);
+                    $image = $this->upload->data();
+                    unlink('uploads/'.$image['file_name']);
+                    $data =array('username' =>  $this->session->userdata('username'),'error_message'=> '','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>'');
+                    $getTypename   = lcfirst($getTypename);
+                    header( "refresh:2;url=https://thinkkosovo.cleverapps.io/banner" );
+                    $this->load->view('adminpanel/header');
+                    $this->load->view('adminpanel/event/'.$getTypename,$data);
+                  }
+            }
+           }
+
+        }else{
+            redirect('https://thinkkosovo.cleverapps.io/admin');
+        }
+  }
+
   function deleteeventdata($getTypename=''){
 
     if($this->session->userdata('username') != ''){
@@ -762,6 +920,23 @@ class Admin extends CI_Controller {
       $message_deleted = $this->event->deleteEventdata($row_id);
       $this->load->library('adminpanel/event');
       $returnData = $this->event->getEventdata($getTypename);
+      $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>$message_deleted['message']);
+      $getTypename   = lcfirst($getTypename);
+      header( "refresh:2;url=https://thinkkosovo.cleverapps.io/".$getTypename );
+      $this->load->view('adminpanel/header');
+      $this->load->view('adminpanel/event/'.$getTypename,$data);
+    }else{
+      redirect('https://thinkkosovo.cleverapps.io/admin');
+    }
+  }
+
+    function deletebannerdata($getTypename=''){
+    if($this->session->userdata('username') != ''){
+      $row_id = $this->input->post('id');
+      $this->load->library('adminpanel/event');
+      $message_deleted = $this->event->deleteBannerdata($row_id);
+      $this->load->library('adminpanel/event');
+      $returnData = $this->event->getBannerdata($getTypename);
       $data =array('username' =>  $this->session->userdata('username'),'error_message'=>'','error_message_update'=> '','return_message'=>'','return_message_update'=>'','table_data'=>$returnData,'message_deleted'=>$message_deleted['message']);
       $getTypename   = lcfirst($getTypename);
       header( "refresh:2;url=https://thinkkosovo.cleverapps.io/".$getTypename );
