@@ -870,8 +870,9 @@ class Admin extends CI_Controller {
                 }else{
                   $image_info     = $this->upload->data();
                   $image_name     = $image_info['file_name'];
+                  $id           = $this->input->post('idupdate');
                   $name           = $this->input->post('nameupdate');
-                  $postData       = ['image'=>$image_name,'name'=>$name];
+                  $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name];
                   $this->load->library('adminpanel/event');
                   $returnData_1     = $this->event->update_data_banner($postData);
                   $this->load->library('adminpanel/event');
