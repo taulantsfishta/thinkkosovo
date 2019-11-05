@@ -272,7 +272,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                               <option value='Viti'>Viti</option>
                                               <option value='Vushtrri'>Vushtrri</option>
                                               <option value='Zubin Potok'>Zubin Potok</option>
-                                              <option value='Zvecan'>Zvecan</option>
+                                              <option value='Zvecan'>ZvecanC</option>
                                             </select>
                                           </div>
                                           <div class='form-group'>
