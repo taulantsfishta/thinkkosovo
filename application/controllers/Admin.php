@@ -840,7 +840,7 @@ class Admin extends CI_Controller {
         }
   }
 
-    function updatebannertdata($getTypename=''){
+    function updatebannerdata($getTypename=''){
           if($this->session->userdata('username') != ''){
            if($this->input->post()==null){
              $this->load->library('adminpanel/event');
