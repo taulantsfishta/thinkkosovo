@@ -87,6 +87,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               <li>
                                   <a href="<?php echo 'https://thinkkosovo.cleverapps.io/history'; ?>"><i class="fas fa-monument"></i>History</a>
                               </li>
+                               <li>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/attraction'; ?>"><i class="fas fa-camera-retro"></i>Attraction</a>
+                              </li>
 
                             </ul>
                         </li>
@@ -182,6 +185,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               </li>
                               <li>
                                   <a href="<?php echo 'https://thinkkosovo.cleverapps.io/history'; ?>"><i class="fas fa-monument"></i>History</a>
+                              </li>
+                                 <li>
+                                  <a href="<?php echo 'https://thinkkosovo.cleverapps.io/attraction'; ?>"><i class="fas fa-camera-retro"></i>Attraction</a>
                               </li>
 
                             </ul>

@@ -67,20 +67,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="col-md-6">
                     <div class="login-form">
                       <p  style="text-align:center;font-size:25px;">
-                        Register new museum
+                        Register new attraction
                       </p>
                         <span class='col-md-12' style="color:#63C76A;font-size:20px;"><?php echo $return_message;?></span>
-                        <form action="<?php echo "https://thinkkosovo.cleverapps.io/register_historyandculturedata/Museum" ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php echo "https://thinkkosovo.cleverapps.io/register_historyandculturedata/Attraction" ?>" method="post" enctype="multipart/form-data">
                             <div class="form-group">
-                                <input class="au-input au-input--full" type="text" name="name" placeholder="Museum name" pattern='.{3,100}' required title='3 to 100 characters'>
+                                <input class="au-input au-input--full" type="text" name="name" placeholder="Attraction name" pattern='.{3,100}' required title='3 to 100 characters'>
                                   <span class='text_danger' style="color:red;"><?php echo form_error('name'); ?></span>
                             </div>
                             <div class="form-group">
-                                <input class="au-input au-input--full" type="hidden" value="Museum" name="type_name" >
+                                <input class="au-input au-input--full" type="hidden" value="Attraction" name="type_name" >
                             </div>
                             <div class="form-group">
                               <select required id="sel1"  class="selectform"  name='location'>
-                                <option value= '' selected disabled>Select City</option>
+                                <option value='' selected disabled>Select City</option>
                                 <option value='Deçan'>Deçan</option>
                                 <option value='Dragash'>Dragash</option>
                                 <option value='Ferizaj'>Ferizaj</option>
@@ -141,7 +141,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <span class='text_danger' style="color:red;"><?php echo form_error('longitude'); ?></span>
                             </div>
                             <div class="form-group">
-                                <input class="upload_image" type="file" name="image" placeholder="Museum Image" required>
+                                <input class="upload_image" type="file" name="image" placeholder="Attraction Image" required>
                             </div>
                             <span class='text_danger' style="color:red;"><?php echo $error_message; ?></span>
                             <div class="register-link">
@@ -187,7 +187,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <thead>
                       <tr>
-                        <th class="th-sm">Museum Name
+                        <th class="th-sm">Attraction Name
 
                         </th>
                         <th class="th-sm">Location
@@ -222,17 +222,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                       <div class='modal-content'>
                                         <div class='modal-body'>
                                         <p  style='text-align:center;font-size:25px;'>
-                                          Update the museum
+                                          Update the attraction
                                         </p>
-                                          <form action=".'https://thinkkosovo.cleverapps.io/updatehistoryandculturedata/Museum'." method='post' enctype='multipart/form-data''>
+                                          <form action=".'https://thinkkosovo.cleverapps.io/updatehistoryandculturedata/Attraction'." method='post' enctype='multipart/form-data''>
                                           <div class='form-group'>
                                           <input class='au-input au-input--full' type='text' name='idupdate' value=".$value['id']." hidden>
                                           </div>
                                           <div class='form-group'>
-                                              <input class='au-input au-input--full' type='text' name='nameupdate'  value='".$value['name']."' placeholder='Museum name' pattern='.{3,100}' required title='3 to 100 characters'>
+                                              <input class='au-input au-input--full' type='text' name='nameupdate'  value='".$value['name']."' placeholder='Attraction name' pattern='.{3,100}' required title='3 to 100 characters'>
                                           </div>
                                           <div class='form-group'>
-                                              <input class='au-input au-input--full' type='hidden' value='Museum' name='type_nameupdate' >
+                                              <input class='au-input au-input--full' type='hidden' value='Attraction' name='type_nameupdate' >
                                           </div>
                                           <div class='form-group'>
                                             <select  id='sel1'  class='selectform'  name='locationupdate'>
@@ -291,9 +291,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                               <input class='au-input au-input--full' type='text' name='longitudeupdate' value='".$value['longitude']."' placeholder='Longitude(21.163969)' pattern='.{3,50}' required title='3 to 50 characters'>
                                           </div>
                                           <div class='main-section'>
-                                            <p  style='color:red;'>If you edit any data you should update the museum photo again</p>
+                                            <p  style='color:red;'>If you edit any data you should update the attraction photo again</p>
                                           <div class='form-group'>
-                                                <input class='upload_image' type='file' name='imageupdate' placeholder='Museum Image' required>
+                                                <input class='upload_image' type='file' name='imageupdate' placeholder='Attraction Image' required>
                                           </div>
                                           </div>
                                           <div class='register-link'>
@@ -310,7 +310,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                             </td>
 
-                            <form action=".'https://thinkkosovo.cleverapps.io/deletehistoryandculturedata/Museum'." method='post' onsubmit='return ConfirmDelete()'>
+                            <form action=".'https://thinkkosovo.cleverapps.io/deletehistoryandculturedata/Attraction'." method='post' onsubmit='return ConfirmDelete()'>
                             <td style='  background-color:#d11a2a;'><button type='submit' name='id' value=".$value['id']."><span style=font-weight:bold;;color:white;'>Delete</span></button></td>
                             </form>
                           </tr>";
@@ -420,9 +420,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           var locationupdate        = "<?php echo form_error('locationupdate'); ?>";
           var descriptionupdate     = "<?php echo form_error('descriptionupdate'); ?>";
           var addressupdate         = "<?php echo form_error('addressupdate'); ?>";
-          var work_timeupdate            = "<?php echo form_error('work_timeupdate'); ?>";
-          var latitudeupdate            = "<?php echo form_error('latitudeupdate'); ?>";
-          var longitudeupdate            = "<?php echo form_error('longitudeupdate'); ?>";
+          var work_timeupdate       = "<?php echo form_error('work_timeupdate'); ?>";
+          var latitudeupdate        = "<?php echo form_error('latitudeupdate'); ?>";
+          var longitudeupdate       = "<?php echo form_error('longitudeupdate'); ?>";
 
           var str                   = error_message_update +',' + nameupdate + ',' + locationupdate + ',' + descriptionupdate + ',' + addressupdate + ','+ work_timeupdate +','+latitudeupdate+','+longitudeupdate;
           var array                 = str.split(",");
