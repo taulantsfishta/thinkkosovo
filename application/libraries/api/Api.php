@@ -145,7 +145,7 @@ class Api {
                                                   'name'               => $value['name'],
                                                   'location'           => $value['location'],
                                                   'city'               => $value['city'],
-                                                  'contact'            => $value['contact'],
+                                                  'telephone'          => $value['telephone'],
                                                   'description'        => $value['description'],
                                                   'offer'              => $value['offer'],
                                                   'stars'              => $value['stars'],

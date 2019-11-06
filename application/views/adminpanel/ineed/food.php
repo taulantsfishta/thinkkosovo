@@ -116,8 +116,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <span class='text_danger' style="color:red;"><?php echo form_error('location'); ?></span>
                             </div>
                             <div class="form-group">
-                                <textarea class="textareaclass" style ="width:100%;"  name="contact" placeholder="Telephone" pattern='.{3,500}' required title='3 to 500 characters'></textarea>
-                                <span class='text_danger' style="color:red;"><?php echo form_error('contact'); ?></span>
+                                <input class="au-input au-input--full" type="text" name="telephone" placeholder="Telephone" pattern='.{9,100}' required title='9 to 100 characters'>
+                                <span class='text_danger' style="color:red;"><?php echo form_error('telephone'); ?></span>
                             </div>
                             <div class="form-group">
                                 <textarea class="textareaclass" style ="width:100%;"  name="description" placeholder="Description" pattern='.{3,1000}' required title='3 to 1000 characters'></textarea>
@@ -282,7 +282,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <input class='au-input au-input--full' type='text' name='locationupdate' value='".$value['location']."' placeholder='Address' pattern='.{3,500}' required title='3 to 500 characters'>
                                             </div>
                                             <div class='form-group'>
-                                                <textarea class='textareaclass' style ='width:100%;'  name='contactupdate' placeholder='Telephone' pattern='.{3,500}' required title='3 to 500 characters'>".$value['contact']."</textarea>
+                                                    <input class='au-input au-input--full' type='text' name='telephoneupdate' value='".$value['telephone']."' placeholder='Telephone' pattern='.{9,100}' required title='9 to 100 characters'>
                                             </div>
                                             <div class='form-group'>
                                                 <textarea class='textareaclass' style ='width:100%;'  name='descriptionupdate' placeholder='Description' pattern='.{3,1000}' required title='3 to 1000 characters'>".$value['description']."</textarea>
@@ -475,18 +475,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           var cityupdate            = "<?php echo form_error('cityupdate'); ?>";
           var nameupdate            = "<?php echo form_error('nameupdate'); ?>";
           var locationupdate        = "<?php echo form_error('locationupdate'); ?>";
-          var contactupdate         = "<?php echo form_error('contactupdate'); ?>";
+          var telephoneupdate         = "<?php echo form_error('telephoneupdate'); ?>";
           var descriptionupdate     = "<?php echo form_error('descriptionupdate'); ?>";
           var starsupdate           = "<?php echo form_error('starsupdate'); ?>";
           var latitudeupdate        = "<?php echo form_error('latitudeupdate'); ?>";
           var longitudeupdate       = "<?php echo form_error('longitudeupdate'); ?>";
-          var str                   = error_message_update_1 +',' + error_message_update +',' + nameupdate + ',' + locationupdate + ',' + cityupdate + ',' + contactupdate + ','+ descriptionupdate +','+starsupdate+','+latitudeupdate+','+longitudeupdate;
+          var str                   = error_message_update_1 +',' + error_message_update +',' + nameupdate + ',' + locationupdate + ',' + cityupdate + ',' + telephoneupdate + ','+ descriptionupdate +','+starsupdate+','+latitudeupdate+','+longitudeupdate;
           console.log(str);
           var array                 = str.split(",");
           var newArray              = [];
           if('' != return_message_update){
             alertify.alert('Update Message', return_message_update);
-          }else if(('' == error_message_update_1) && ('' == error_message_update) && ('' == nameupdate) && ('' == locationupdate) && ('' == cityupdate) && ('' == contactupdate)
+          }else if(('' == error_message_update_1) && ('' == error_message_update) && ('' == nameupdate) && ('' == locationupdate) && ('' == cityupdate) && ('' == telephoneupdate)
            && ('' == descriptionupdate) && ('' == starsupdate)&& ('' == latitudeupdate)&& ('' == longitudeupdate)){
             return ;
           }

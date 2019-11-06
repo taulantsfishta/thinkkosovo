@@ -1051,7 +1051,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('name','Place Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('telephone','Telephone','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('stars','Star of Place','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('url','Url','xss_clean');
@@ -1090,7 +1090,7 @@ class Admin extends CI_Controller {
               $name           = $this->input->post('name');
               $location       = $this->input->post('location');
               $city           = $this->input->post('city');
-              $contact        = $this->input->post('contact');
+              $telephone      = $this->input->post('telephone');
               $description    = $this->input->post('description');
               $stars          = $this->input->post('stars');
               $latitude       = $this->input->post('latitude');
@@ -1125,7 +1125,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->register_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -1211,7 +1211,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('nameupdate','Place Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('telephoneupdate','Telephone','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('starsupdate','Star of Place','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('urlupdate','Url','xss_clean');
@@ -1251,7 +1251,7 @@ class Admin extends CI_Controller {
               $name           = $this->input->post('nameupdate');
               $location       = $this->input->post('locationupdate');
               $city           = $this->input->post('cityupdate');
-              $contact        = $this->input->post('contactupdate');
+              $telephone      = $this->input->post('telephoneupdate');
               $description    = $this->input->post('descriptionupdate');
               $stars          = $this->input->post('starsupdate');
               $latitude       = $this->input->post('latitudeupdate');
@@ -1285,7 +1285,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->update_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -1372,7 +1372,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('name','Travel Agency Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('telephone','Telephone','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('stars','Star of Travel Agency','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('url','Url','xss_clean');
@@ -1410,7 +1410,7 @@ class Admin extends CI_Controller {
               $name           = $this->input->post('name');
               $location       = $this->input->post('location');
               $city           = $this->input->post('city');
-              $contact        = $this->input->post('contact');
+              $telephone      = $this->input->post('telephone');
               $description    = $this->input->post('description');
               $stars          = $this->input->post('stars');
               $latitude       = $this->input->post('latitude');
@@ -1445,7 +1445,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->register_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -1531,7 +1531,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('nameupdate','Travel Agency Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('telephoneupdate','Telephone','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('starsupdate','Star of Travel Agency','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('updateurl','Url','xss_clean');
@@ -1570,7 +1570,7 @@ class Admin extends CI_Controller {
               $name           = $this->input->post('nameupdate');
               $location       = $this->input->post('locationupdate');
               $city           = $this->input->post('cityupdate');
-              $contact        = $this->input->post('contactupdate');
+              $telephone      = $this->input->post('telephoneupdate');
               $description    = $this->input->post('descriptionupdate');
               $stars          = $this->input->post('starsupdate');
               $latitude       = $this->input->post('latitudeupdate');
@@ -1604,7 +1604,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->update_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -1690,7 +1690,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('name','Food Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('telephone','Telephone','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('stars','Star of Food Service','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('url','Url','xss_clean');
@@ -1728,7 +1728,7 @@ class Admin extends CI_Controller {
               $name           = $this->input->post('name');
               $location       = $this->input->post('location');
               $city           = $this->input->post('city');
-              $contact        = $this->input->post('contact');
+              $telephone      = $this->input->post('telephone');
               $description    = $this->input->post('description');
               $stars          = $this->input->post('stars');
               $latitude       = $this->input->post('latitude');
@@ -1763,7 +1763,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->register_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -1849,7 +1849,7 @@ class Admin extends CI_Controller {
        $this->form_validation->set_rules('nameupdate','Food Name','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
        $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-       $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+       $this->form_validation->set_rules('telephoneupdate','Telephone','required|xss_clean|min_length[3]|max_length[100]');
        $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
        $this->form_validation->set_rules('starsupdate','Star of Food Service','required|xss_clean|min_length[3]|max_length[4]');
        $this->form_validation->set_rules('urlupdate','Url','xss_clean');
@@ -1888,7 +1888,7 @@ class Admin extends CI_Controller {
               $name           = $this->input->post('nameupdate');
               $location       = $this->input->post('locationupdate');
               $city           = $this->input->post('cityupdate');
-              $contact        = $this->input->post('contactupdate');
+              $telephone      = $this->input->post('telephoneupdate');
               $description    = $this->input->post('descriptionupdate');
               $stars          = $this->input->post('starsupdate');
               $latitude       = $this->input->post('latitudeupdate');
@@ -1922,7 +1922,7 @@ class Admin extends CI_Controller {
                 }
 
               }
-              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
+              $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
               $this->load->library('adminpanel/ineed');
               $returnData_1     = $this->ineed->update_data($postData);
               $this->load->library('adminpanel/ineed');
@@ -2010,7 +2010,7 @@ class Admin extends CI_Controller {
              $this->form_validation->set_rules('name','Coffe Name','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('location','Address','required|xss_clean|min_length[3]|max_length[500]');
              $this->form_validation->set_rules('city','City','required|xss_clean|min_length[3]|max_length[100]');
-             $this->form_validation->set_rules('contact','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+             $this->form_validation->set_rules('telephone','Telephone','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('description','Description','required|xss_clean|min_length[3]|max_length[1000]');
              $this->form_validation->set_rules('stars','Star of Coffe Service','required|xss_clean|min_length[3]|max_length[4]');
              $this->form_validation->set_rules('url','Url','xss_clean');
@@ -2048,7 +2048,7 @@ class Admin extends CI_Controller {
                     $name           = $this->input->post('name');
                     $location       = $this->input->post('location');
                     $city           = $this->input->post('city');
-                    $contact        = $this->input->post('contact');
+                    $telephone      = $this->input->post('telephone');
                     $description    = $this->input->post('description');
                     $stars          = $this->input->post('stars');
                     $latitude       = $this->input->post('latitude');
@@ -2084,7 +2084,7 @@ class Admin extends CI_Controller {
                       }
 
                     }
-                    $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
+                    $postData       = ['image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'offer'=>$offer,'type'=>$type,'url'=>$url,'email'=>$email];
                     $this->load->library('adminpanel/ineed');
                     $returnData_1     = $this->ineed->register_data($postData);
                     $this->load->library('adminpanel/ineed');
@@ -2170,7 +2170,7 @@ class Admin extends CI_Controller {
              $this->form_validation->set_rules('nameupdate','Coffe Name','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('locationupdate','Address','required|xss_clean|min_length[3]|max_length[500]');
              $this->form_validation->set_rules('cityupdate','City','required|xss_clean|min_length[3]|max_length[100]');
-             $this->form_validation->set_rules('contactupdate','Telephone','required|xss_clean|min_length[3]|max_length[500]');
+             $this->form_validation->set_rules('telephoneupdate','Telephone','required|xss_clean|min_length[3]|max_length[100]');
              $this->form_validation->set_rules('descriptionupdate','Description','required|xss_clean|min_length[3]|max_length[1000]');
              $this->form_validation->set_rules('starsupdate','Star of Coffe Service','required|xss_clean|min_length[3]|max_length[4]');
              $this->form_validation->set_rules('urlupdate','Url','xss_clean');
@@ -2209,7 +2209,7 @@ class Admin extends CI_Controller {
                     $name           = $this->input->post('nameupdate');
                     $location       = $this->input->post('locationupdate');
                     $city           = $this->input->post('cityupdate');
-                    $contact        = $this->input->post('contactupdate');
+                    $telephone        = $this->input->post('telephoneupdate');
                     $description    = $this->input->post('descriptionupdate');
                     $stars          = $this->input->post('starsupdate');
                     $latitude       = $this->input->post('latitudeupdate');
@@ -2245,7 +2245,7 @@ class Admin extends CI_Controller {
                       }
 
                     }
-                    $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'contact'=>$contact,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
+                    $postData       = ['id'=>$id,'image'=>$image_name,'name'=>$name,'location'=>$location,'city'=>$city,'telephone'=>$telephone,'description'=>$description,'stars'=>$stars,'latitude'=>$latitude,'longitude'=>$longitude,'gallery'=>$data,'type'=>$type,'url'=>$url,'email'=>$email];
                     $this->load->library('adminpanel/ineed');
                     $returnData_1     = $this->ineed->update_data($postData);
                     $this->load->library('adminpanel/ineed');
