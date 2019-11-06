@@ -29,6 +29,7 @@ class Api {
     $selectedData   = [];
     $selectedData_1 = [];
     $selectedData_2 = [];
+    $selectedData_3 = [];
     if(null != $select_events){
       foreach ($select_events as $key => $value) {
         $latitude_longitude = $value['latitude_longitude'];
@@ -193,7 +194,26 @@ class Api {
       }else{
       $selectedData_2[]= false;
     }
-    $returnData =[[json_encode($selectedData)],[json_encode($selectedData_1)],[json_encode($selectedData_2)]];
+
+    $select_banner = $this->ci->db->select('*')->from('banner')->order_by('id','desc')->get()->result_array();
+    if(null != $select_banner){
+      foreach ($select_banner as $key => $value) {
+        $selectedData_3[] =
+                           [
+                            'id'              => $value['id'],
+                            'name'            => $value['name'],
+                            'image'           => "https://thinkkosovo.cleverapps.io/uploads/".$value['image'],
+                            'created_at'      => $value['created_at'],
+                            'updated_at'      => $value['updated_at'],
+                          ];
+      
+        }
+
+      }else{
+      $selectedData_3[]= false;
+    }
+
+    $returnData =[[json_encode($selectedData)],[json_encode($selectedData_1)],[json_encode($selectedData_2)],[json_encode($selectedData_3)]];
     return $returnData;
   }
 
